@@ -284,6 +284,11 @@ body{
 
 .section-sub-menu{
   padding: 30px;
+  display: none;
+}
+
+.section-sub-menu.active{
+  display: block;
 }
 
 .section-name{
