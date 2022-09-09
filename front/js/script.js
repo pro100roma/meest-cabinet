@@ -1,21 +1,14 @@
 
-$(".section-sub-menu").eq(0).show()
-$(".section-name").click(function(e){
-
-  e.preventDefault();
-  $(this).toggleClass("active")
-  $(".section-sub-menu").hide()
-  // $(this).removeClass("active")
-  $(this).next(".section-sub-menu").slideDown(700)
-
-})
-
-
-
-// let index = $(".section-sub-menu").index()
-
-
-    // else display.innerHTML = 'LIVE NOW';
+$(function() {
+  $(".accordion-wrap .accordion-section").eq(0).find('.section-sub-menu').addClass('active')
+  $(".section-name").click(function(e){
+    e.preventDefault();
+    $(".section-name").removeClass('active')
+    $(this).addClass("active")
+    $(".section-sub-menu").removeClass('active')
+    $(this).next(".section-sub-menu").addClass('active')
+     })
+  })
 
 
 
@@ -36,5 +29,10 @@ $(function() {
   });
   
 });
+
+
+
+
+
 
 
