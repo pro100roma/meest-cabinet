@@ -50,6 +50,14 @@ body {
   margin-bottom: 10px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
+.w33 {
+  width: 33.3%;
+}
+
 .p-40 {
   padding: 40px 40px 30px;
 }
@@ -171,10 +179,9 @@ body {
   display: block;
 }
 .form-row .input {
-  display: block;
   border: 1px solid #D7D8D9;
   border-radius: 100px;
-  padding: 13px 20px 16px;
+  padding: 14px 20px 14px;
   width: 100%;
   font-weight: 500;
   font-size: 14px;
@@ -184,8 +191,30 @@ body {
 }
 .form-row select {
   background: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(../img/down-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: calc(100% - 14px) center;
 }
-.form-row select option {
+.form-row option {
+  background: none;
+}
+
+.form-row .input.address-lookup {
+  padding: 10px;
+}
+
+.address-lookup select {
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: calc(100% - 14px) center;
+  width: 100%;
+}
+.address-lookup select option {
   background: none;
 }
 
@@ -345,6 +374,7 @@ body {
 }
 .form-columns2 .form-row {
   width: 50%;
+  margin-bottom: 0;
 }
 
 .divide {
@@ -364,6 +394,9 @@ body {
   top: 50%;
   right: 0;
   width: 80%;
+}
+.divide.small-line:after {
+  width: 85%;
 }
 
 .create_account {
@@ -568,4 +601,50 @@ tr:nth-child(even) {
 }
 .top-create-account .sub-button {
   display: none;
+}
+
+.form-row.last {
+  margin-bottom: 0;
+}
+
+.section-sub-menu.popup {
+  display: block;
+}
+
+.flex-columns3 {
+  column-gap: 23px;
+}
+.flex-columns3 .form-row {
+  margin-bottom: 0;
+}
+
+.calculator-popup {
+  margin: 0 auto;
+  width: 680px;
+}
+.calculator-popup .section-sub-menu {
+  padding: 40px 40px 30px;
+}
+.calculator-popup .end {
+  padding: 30px 40px;
+}
+.calculator-popup .end .sub-button {
+  margin-right: 15px;
+}
+
+.mfp-bg {
+  background: rgba(35, 97, 169, 0.4);
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
+}
+
+.top-calculator {
+  padding: 25px 20px 25px 22px;
+}
+
+.link-login-form .h3 {
+  margin-right: 8px;
+}
+.link-login-form .h3:last-of-type {
+  margin-right: 0;
 }

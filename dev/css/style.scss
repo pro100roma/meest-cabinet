@@ -52,6 +52,14 @@ body{
   margin-bottom: 10px;
 }
 
+.mt-30{
+  margin-top: 30px;
+}
+
+.w33{
+  width: 33.3%;
+}
+
 .p-40{
   padding: 40px 40px 30px;
 }
@@ -175,10 +183,10 @@ body{
     display: block;
   }
   .input{
-    display: block;
+    // display: block;
     border: 1px solid #D7D8D9;
     border-radius: 100px;
-    padding: 13px 20px 16px;
+    padding: 14px 20px 14px;
     width: 100%;
     font-weight: 500;
     font-size: 14px;
@@ -188,11 +196,36 @@ body{
   }
   select{
     background: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../img/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - 14px) center;
+    }
     option{
       background: none;
     }
   }
-}
+
+  .form-row .input.address-lookup{
+    padding: 10px;
+  }
+
+  .address-lookup{
+    select{
+      border: none;
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: calc(100% - 14px) center;
+      width: 100%;
+      option{
+        background: none;
+      }
+    }
+  }
+
 
 .login-form{
   width: 540px;
@@ -353,6 +386,7 @@ body{
   column-gap: 20px;
   .form-row{
     width: 50%;
+    margin-bottom: 0;
   }
 }
 
@@ -372,6 +406,9 @@ body{
     top: 50%;
     right: 0;
     width: 80%;
+  }
+  &.small-line:after{
+    width: 85%;
   }
 }
 
@@ -586,6 +623,54 @@ tr:nth-child(even) {
   margin-bottom: 42px;
   .sub-button{
     display: none;
+  }
+}
+
+.form-row.last{
+  margin-bottom: 0;
+}
+
+.section-sub-menu.popup{
+  display: block;
+}
+
+.flex-columns3{
+  column-gap: 23px;
+  .form-row{
+    margin-bottom: 0;
+  }
+}
+
+.calculator-popup{
+  margin: 0 auto;
+  width: 680px;
+  .section-sub-menu{
+    padding: 40px 40px 30px;
+  }
+  .end{
+    padding: 30px 40px;
+    .sub-button{
+      margin-right: 15px;
+    }
+  }
+}
+
+
+
+.mfp-bg {
+  background: rgba(35, 97, 169, 0.4);
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
+}
+
+.top-calculator{
+  padding: 25px 20px 25px 22px;
+}
+
+.link-login-form .h3{
+  margin-right: 8px;
+  &:last-of-type{
+    margin-right: 0;
   }
 }
 

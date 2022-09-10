@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>login-form</title>
 	<meta name="description" content="">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -28,9 +29,10 @@
 					<input type="text" class="input" name="your_password" placeholder="Your Password">
 				</div>
 				<button class="main-button">LOGIN</button>
-				<div class="d-flex ai jc">
+				<div class="link-login-form d-flex ai jc">
 					<a href="" class="h3">Reset Password</a>
 					<a href="" class="h3">Sign up</a>
+					<a href="#test-modal" class="h3 estimate-cost popup-modal">Estimate Your Cost</a>
 				</div>
 			</div>
 				<p class="h2">OR</p>
@@ -39,6 +41,88 @@
 			</div>
 		</form>
 	</div>
+
+
+
+	<div class="calculator-popup form mfp-hide white-popup-block" id="test-modal">
+		<div class="top-calculator d-flex ai jc bb">
+			<h2 class="heading">COST CALCULATOR</h2>
+			<a href="" class="calculator-popup-dismiss"><img src="img/close.svg" alt=""></a>
+		</div>
+		<div>
+			<div class="section-sub-menu popup bb">
+				<div class="form-flex-wrap d-flex">
+					<div class="left">
+						<form action="" class="form-flex">
+							<div class="form-row">
+								<label for="" class="label">Sender From</label>
+								<input type="text" class="input" name="sender_form" placeholder="Sender Form">
+							</div>
+							<div class="form-row">
+								<label for="" class="label">Oblast/Province</label>
+								<select name="province" id="" class="input">
+									<img src="img/flag.svg" alt="">
+									<option value="">Ukraine</option>
+									<option value="">Ukraine</option>
+									<option value="">Ukraine</option>
+								</select>
+							</div>
+						</form>
+					</div>
+					<div class="right">
+						<form action="" class="form-flex">
+							<div class="form-row">
+								<label for="" class="label">Recipient Country</label>
+								<div class="input address-lookup d-flex ai jc">
+									<img class="flag" src="img/flag.svg" alt="">
+									<select name="address_lookup" id="">
+									<option value="">Ukraine</option>
+										<option value="">Ukraine</option>
+										<option value="">Ukraine</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-row">
+								<label for="" class="label">Parcel Weight kg</label>
+								<input type="text" class="input" name="parcel_weight_kg" placeholder="">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="flex-columns3 d-flex ai jc">
+					<div class="w33">
+						<div class="form-row">
+							<label for="" class="label">Weight kg</label>
+							<input type="text" class="input" name="parcel_weight_kg" placeholder="">
+						</div>
+					</div>
+					<div class="w33">
+						<div class="form-row">
+							<label for="" class="label">Height cm</label>
+							<input type="text" class="input" name="height" placeholder="">
+						</div>
+					</div>
+					<div class="w33">
+						<div class="form-row">
+							<label for="" class="label">Width cm</label>
+							<input type="text" class="input" name="width" placeholder="">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="end">
+				<button class="sub-button">CALCULATE</button>
+				<button class="main-button">SHIP NOW</button>
+			</div>		
+		</div>
+		<div></div>
+	</div>
+
+	
+	<script src="js/jq/jq.js"></script>
+	<script src="js/popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/script.js"></script>
 
 
 

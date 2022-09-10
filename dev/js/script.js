@@ -11,23 +11,16 @@ $(function() {
   })
 
 
-
-
-$(function() {
-  $(".hed-accordion").click(function(e){
-
-    e.preventDefault();
-    var $this = $(this);
-
-    if (!$this.hasClass("accordion-active")) {
-      $(".sub-accord").slideUp(700);
-      $(".hed-accordion").removeClass("accordion-active");
-    }
-
-    $this.toggleClass("accordion-active");
-    $this.find('.sub-accord').slideToggle();
+$(function () {
+  $('.popup-modal').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    modal: true
   });
-  
+  $(document).on('click', '.popup-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
 });
 
 

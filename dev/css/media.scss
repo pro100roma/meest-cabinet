@@ -4,7 +4,7 @@
   margin-right: 5px;
 }
 .form-row .input {
-  padding: 13px 15px 16px;
+  padding: 13px 15px 13px;
 }
 
 }
@@ -87,6 +87,42 @@
 
 .divide::after {
   width: 70%;
+}
+
+.calculator-popup {
+  margin: 0;
+  width: calc(100% + 12px);
+	margin-left: -12px;
+  height: 100%;
+  position: fixed;
+  z-index: 20000;
+  background-color: #fff;
+}
+
+.mfp-inline-holder .mfp-content {
+  height: 100%;
+}
+
+.flex-columns3 {
+  column-gap: 7px;
+}
+
+.calculator-popup{
+	.end{
+		padding: 30px 16px 30px 40px;
+	}
+	.section-sub-menu {
+  	padding: 20px 15px 30px;
+	}
+} 
+
+.calculator-popup.form{
+  border-radius: 0;
+}
+
+.top-calculator {
+  padding: 42px 15px 0px;
+  border-bottom: 0;
 }
 
 }

@@ -31,18 +31,18 @@
 									<form action="" class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Contact Phone</label>
-											<input type="text" class="input" name="your_email" placeholder="Contact Phone">
+											<input type="text" class="input" name="contact_phone" placeholder="Contact Phone">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Last Name</label>
-											<input type="text" class="input" name="your_password" placeholder="Last Name">
+											<input type="text" class="input" name="last_name" placeholder="Last Name">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Date of Birth</label>
 											<div class="flex-input d-flex jc">
-												<input type="text" class="input" name="your_password" placeholder="Year">
-												<input type="text" class="input" name="your_password" placeholder="Month">
-												<input type="text" class="input" name="your_password" placeholder="Day">
+												<input type="text" class="input" name="year" placeholder="Year">
+												<input type="text" class="input" name="month" placeholder="Month">
+												<input type="text" class="input" name="day" placeholder="Day">
 											</div>
 										</div>
 										<div class="form-row">
@@ -59,11 +59,11 @@
 										</div>
 										<div class="form-row">
 											<label for="" class="label">First Name</label>
-											<input type="text" class="input" name="first-name" placeholder="First Name">
+											<input type="text" class="input" name="first_name" placeholder="First Name">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Language preference</label>
-											<select name="language-preference" id="" class="input">
+											<select name="language_preference" id="" class="input">
 												<option value="">Ukraine</option>
 												<option value="">Ukraine</option>
 												<option value="">Ukraine</option>
@@ -92,16 +92,18 @@
 									<form action="" class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Address Lookup</label>
-											<select name="language-preference" id="" class="input">
-												<img src="img/flag.svg" alt="">
-												<option value="">Ukraine</option>
-												<option value="">Ukraine</option>
-												<option value="">Ukraine</option>
-											</select>
+											<div class="input address-lookup d-flex ai jc">
+												<img class="flag" src="img/flag.svg" alt="">
+												<select name="address_lookup" id="">
+													<option value="">Ukraine</option>
+													<option value="">Ukraine</option>
+													<option value="">Ukraine</option>
+												</select>
+											</div>
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Postal/ZIP Code</label>
-											<select name="language-preference" id="" class="input">
+											<select name="zip_code" id="" class="input">
 												<img src="img/flag.svg" alt="">
 												<option value="">Ukraine</option>
 												<option value="">Ukraine</option>
@@ -110,7 +112,7 @@
 										</div>
 										<div class="form-row">
 											<label for="" class="label">City</label>
-											<select name="language-preference" id="" class="input">
+											<select name="city" id="" class="input">
 												<img src="img/flag.svg" alt="">
 												<option value="">Ukraine</option>
 												<option value="">Ukraine</option>
@@ -124,7 +126,7 @@
 											</div>
 											<div class="form-row">
 												<label for="" class="label">Apt. #</label>
-												<input type="text" class="input" name="street" placeholder="">
+												<input type="text" class="input" name="apt" placeholder="">
 											</div>
 										</div>
 									</form>
@@ -141,30 +143,30 @@
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Language preference</label>
-											<select name="language-preference" id="" class="input">
-												<option value="">Ukraine</option>
-												<option value="">Ukraine</option>
-												<option value="">Ukraine</option>
+											<select name="language_preference" id="Language" class="input">
+												<option value="1">Ukraine</option>
+												<option value="2">Ukraine</option>
+												<option value="3">Ukraine</option>
 											</select>
 										</div>
-										<div class="form-row">
+										<div class="form-row last">
 											<label for="" class="label">Repeat password</label>
 											<input type="text" class="input" name="repeat_password" placeholder="Password">
 										</div>
 									</form>
 								</div>
 							</div>
-							<div class="divide">SENT BY</div>
+							<div class="divide mt-30 small-line">SENT BY</div>
 							<div class="form-flex-wrap d-flex">
 								<div class="left">
 									<form action="" class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Phone #</label>
-											<input type="text" class="input" name="your_email" placeholder="Phone">
+											<input type="text" class="input" name="phone" placeholder="Phone">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Last Name</label>
-											<input type="text" class="input" name="your_password" placeholder="Last Name">
+											<input type="text" class="input" name="last_name" placeholder="Last Name">
 										</div>
 									</form>
 								</div>
@@ -176,7 +178,7 @@
 										</div>
 										<div class="form-row">
 											<label for="" class="label">First Name</label>
-											<input type="text" class="input" name="first-name" placeholder="First Name">
+											<input type="text" class="input" name="first_name" placeholder="First Name">
 										</div>
 									</form>
 								</div>
@@ -196,6 +198,7 @@
 			</div>
 		</div>
 	</div>
+
 
 
 	<script src="js/jq/jq.js"></script>
