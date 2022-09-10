@@ -218,7 +218,7 @@ body{
       border: none;
       background-repeat: no-repeat;
       background-size: 12px;
-      background-position: calc(100% - 14px) center;
+      background-position: calc(100% - 4px) center;
       width: 100%;
       option{
         background: none;
@@ -609,8 +609,6 @@ tr:nth-child(even) {
   padding: 15px 30px;
 }
 
-
-
 .signature-field{
   background: #F8F9FA;
   border: 1px solid #D8E0EB;
@@ -655,8 +653,6 @@ tr:nth-child(even) {
   }
 }
 
-
-
 .mfp-bg {
   background: rgba(35, 97, 169, 0.4);
   backdrop-filter: blur(10px);
@@ -672,5 +668,9 @@ tr:nth-child(even) {
   &:last-of-type{
     margin-right: 0;
   }
+}
+
+.flag{
+  margin-right: 10px;
 }
 

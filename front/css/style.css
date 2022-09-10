@@ -211,7 +211,7 @@ body {
   border: none;
   background-repeat: no-repeat;
   background-size: 12px;
-  background-position: calc(100% - 14px) center;
+  background-position: calc(100% - 4px) center;
   width: 100%;
 }
 .address-lookup select option {
@@ -647,4 +647,8 @@ tr:nth-child(even) {
 }
 .link-login-form .h3:last-of-type {
   margin-right: 0;
+}
+
+.flag {
+  margin-right: 10px;
 }
