@@ -228,10 +228,6 @@ body {
 .login-form .form {
   width: 540px;
 }
-.login-form .form .heading {
-  margin-bottom: 30px;
-  text-align: center;
-}
 .login-form .h2 {
   text-align: center;
   position: relative;
@@ -259,6 +255,10 @@ body {
 }
 .login-form .sub-button {
   margin: 0 auto;
+}
+.login-form .heading {
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .main-button {
@@ -651,4 +651,8 @@ tr:nth-child(even) {
 
 .flag {
   margin-right: 10px;
+}
+
+.iti {
+  width: 100%;
 }

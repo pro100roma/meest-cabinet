@@ -6,6 +6,7 @@
 	<title>Create_an_account</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/intlTelInput.min.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
@@ -25,13 +26,13 @@
 							<div class="number-bcg"><p>1</p></div>
 							<h2 class="h2">USER PROFILE</h2>
 						</div>
-						<form action="" class="section-sub-menu active bb">
+						<form action="" class="form-create-account section-sub-menu active bb">
 							<div class="form-flex-wrap d-flex">
 								<div class="left">
 									<div class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Contact Phone</label>
-											<input type="text" class="input" name="contact_phone" placeholder="Contact Phone">
+											<input type="tel" class="input phone" name="phone" placeholder="Contact Phone">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Last Name</label>
@@ -47,7 +48,7 @@
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Create a password</label>
-											<input type="text" class="input" name="create_password" placeholder="Create a password">
+											<input type="password" class="input" name="password" placeholder="Create a password">
 										</div>
 									</div>
 								</div>
@@ -55,7 +56,7 @@
 									<div class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Email</label>
-											<input type="text" class="input" name="email" placeholder="Email">
+											<input type="email" class="input" name="email" placeholder="Email">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">First Name</label>
@@ -71,7 +72,7 @@
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Repeat password</label>
-											<input type="text" class="input" name="repeat_password" placeholder="Password">
+											<input type="password" class="input" name="password" placeholder="Password">
 										</div>
 									</div>
 								</div>
@@ -151,7 +152,7 @@
 										</div>
 										<div class="form-row last">
 											<label for="" class="label">Repeat password</label>
-											<input type="text" class="input" name="repeat_password" placeholder="Password">
+											<input type="password" class="input" name="password" placeholder="Password">
 										</div>
 									</div>
 								</div>
@@ -174,7 +175,7 @@
 									<div class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Email</label>
-											<input type="text" class="input" name="email" placeholder="Email">
+											<input type="email" class="input" name="email" placeholder="Email">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">First Name</label>
@@ -202,6 +203,8 @@
 
 
 	<script src="js/jq/jq.js"></script>
+	<script src="js/tel-input/intlTelInput-jquery.min.js"></script>
+	<script src="js/validation/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 	
 </body>
