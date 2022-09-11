@@ -235,10 +235,6 @@ body{
   }
   .form{
     width: 540px;
-    .heading{
-      margin-bottom: 30px;
-      text-align: center;
-    }
   }
   .h2{
     text-align: center;
@@ -267,6 +263,10 @@ body{
   }
   .sub-button{
     margin: 0 auto;
+  }
+  .heading{
+    margin-bottom: 30px;
+    text-align: center; 
   }
 }
 
