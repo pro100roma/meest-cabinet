@@ -687,10 +687,17 @@ tr:nth-child(even) {
   column-gap: 20px;
 }
 
-.iti__flag-container .iti__selected-flag {
-  height: unset;
-  padding: 15px 6px 16px 8px;
+.iti--allow-dropdown .iti__flag-container{
+  padding: 0;
 }
+
+.iti__flag-container{
+  .iti__selected-flag {
+    height: unset;
+    padding: 16px 6px 17px 8px;
+  }
+}
+
 
 
 

@@ -27,11 +27,11 @@ $(function() {
 $(function() {
     $.validator.addMethod("emailRegex", function(value, element) {
         return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/i.test(value);
-    }, "Username must contain only letters, numbers, or dashes.");
+    }, "");
 
     $.validator.addMethod("passwordRegex", function(value, element) {
         return this.optional(element) || /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/i.test(value);
-    }, "Username must contain only letters, numbers, or dashes.");
+    }, "Password must be a t least 8 characters, must have at least 1 upper case, 1 lower case, 1 numeric, 1 special character");
 
     $(".login-form-valid").validate({
         rules: {
@@ -52,7 +52,7 @@ $(function() {
             },
             "password": {
                 required: "Password is reguired",
-                passwordRegex: "Username must contain only letters, numbers, or dashes.",
+                passwordRegex: "Password must be a t least 8 characters, must have at least 1 upper case, 1 lower case, 1 numeric, 1 special character",
             }
         }
     });
@@ -94,21 +94,19 @@ $(function() {
               required: true,
               minlength: 3,
             },
-            "language_preference": {
-              required: true,
-            }
 
         },
         messages: {
             "email": {
-                required: "You must enter a login name",
+                required: "You must enter a email name",
                 emailRegex: "Login format not valid"
             },
             "password": {
-                required: "Your password a not valid",
+                required: "Password is reguired",
+                passwordRegex: "Password must be a t least 8 characters, must have at least 1 upper case, 1 lower case, 1 numeric, 1 special character",
             },
             "password_confirm": {
-              required: "Wrong password",
+              required: "Password is reguired",
               equalTo : "Enter the correct password"
             },
             "phone": {
@@ -131,9 +129,6 @@ $(function() {
               required: "Required field",
               minlength: "Enter your full name",
             },
-            "language_preference": {
-              required: "Required field",
-            }
         }
     });
 });
@@ -178,8 +173,8 @@ $(function() {
         },
         messages: {
             "email": {
-                required: "You must enter a login name",
-                emailRegex: "Login format not valid"
+                required: "You must enter a email name",
+                emailRegex: "Email format not valid"
             },
             "phone": {
               required: "Required field",
