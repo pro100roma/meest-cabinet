@@ -35,6 +35,9 @@
   .form-columns2 .form-row {
     margin-bottom: 14px;
   }
+  .form-flex {
+    display: block;
+  }
 }
 @media screen and (max-width: 768px) {
   .login-form {
@@ -91,5 +94,8 @@
   .top-calculator {
     padding: 42px 15px 0px;
     border-bottom: 0;
+  }
+  .form-flex {
+    display: block;
   }
 }

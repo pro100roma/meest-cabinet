@@ -51,41 +51,37 @@
 		</div>
 		<form action="" id="login_form">
 			<div class="section-sub-menu popup bb">
-				<div class="form-flex-wrap d-flex">
-					<div class="left">
-						<div class="form-flex">
-							<div class="form-row">
-								<label for="" class="label">Sender From</label>
-								<input type="text" class="input" name="sender_form" placeholder="Sender Form">
-							</div>
-							<div class="form-row">
-								<label for="" class="label">Oblast/Province</label>
-								<select name="province" id="" class="input">
-									<img src="img/flag.svg" alt="">
-									<option value="">Ukraine</option>
+				<div class="form-flex-wrap">
+					<div class="form-row">
+						<label for="" class="label">Sender From</label>
+						<input type="text" class="input" name="sender_form" placeholder="Sender Form">
+					</div>
+					<div class="form-flex d-flex ai">
+						<div class="form-row">
+							<label for="" class="label">Recipient Country</label>
+							<div class="input address-lookup d-flex ai jc">
+								<img class="flag" src="img/flag.svg" alt="">
+								<select name="address_lookup" id="" class="flag-select">
+								<option value="">Ukraine</option>
 									<option value="">Ukraine</option>
 									<option value="">Ukraine</option>
 								</select>
 							</div>
 						</div>
+						<div class="form-row">
+							<label for="" class="label">Oblast/Province</label>
+							<select name="province" id="" class="input">
+								<img src="img/flag.svg" alt="">
+								<option value="">Ukraine</option>
+								<option value="">Ukraine</option>
+								<option value="">Ukraine</option>
+							</select>
+						</div>
 					</div>
 					<div class="right">
 						<div class="form-flex">
-							<div class="form-row">
-								<label for="" class="label">Recipient Country</label>
-								<div class="input address-lookup d-flex ai jc">
-									<img class="flag" src="img/flag.svg" alt="">
-									<select name="address_lookup" id="" class="flag-select">
-									<option value="">Ukraine</option>
-										<option value="">Ukraine</option>
-										<option value="">Ukraine</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-row">
-								<label for="" class="label">Parcel Weight kg</label>
-								<input type="text" class="input" name="parcel_weight_kg" placeholder="">
-							</div>
+							
+							
 						</div>
 					</div>
 				</div>
