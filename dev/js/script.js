@@ -80,8 +80,34 @@ $(function ()
             "password": {
                 required: true,
                 passwordRegex: true
-
             }
+            "password_confirm": {
+              equalTo : '[name="password"]'
+            }
+            "phone": {
+              required: true,
+            }
+            "last_name": {
+              required: true,
+              minlength: 3,
+            }
+            "year": {
+              required: true,
+            }
+            "month": {
+              required: true,
+            }
+            "day": {
+              required: true,
+            }
+            "first_name": {
+              required: true,
+              minlength: 3,
+            }
+            "language_preference": {
+              required: true,
+            }
+
         },
         messages: {
             "email": {
@@ -89,7 +115,33 @@ $(function ()
                 loginRegex: "Login format not valid"
             },
             "password": {
-                required: "",
+                required: "Your password a not valid",
+            }
+            "password_confirm": {
+              required: "Wrong password",
+            }
+            "phone": {
+              required: "Required field",
+            }
+            "last_name": {
+              required: "Required field",
+              minlength: "Enter your full last name",
+            }
+            "year": {
+              required: "Required field",
+            }
+            "month": {
+              required: "Required field",
+            }
+            "day": {
+              required: "Required field",
+            }
+            "first_name": {
+              required: "Required field",
+              minlength: "Enter your full name",
+            }
+            "language_preference": {
+              required: "Required field",
             }
         }
     });
@@ -100,6 +152,92 @@ $(".phone").intlTelInput({
   allowDropdown: true,
     // options here
 });
+
+
+$(function ()
+{
+
+    $(".form-user-address").validate({
+        rules: {
+            "email": {
+                required: true,
+                loginRegex: true,
+            },
+            "phone": {
+              required: true,
+            }
+            "last_name": {
+              required: true,
+              minlength: 3,
+            }
+            "first_name": {
+              required: true,
+              minlength: 3,
+            }
+            "language_preference": {
+              required: true,
+            }
+            "street": {
+              required: true,
+            }
+            "apt": {
+              required: true,
+            }
+            "address": {
+              required: true,
+            }
+            "city": {
+              required: true,
+            }
+            "zip_code": {
+              required: true,
+            }
+            "address_lookup": {
+              required: true,
+            }
+
+        },
+        messages: {
+            "email": {
+                required: "You must enter a login name",
+                loginRegex: "Login format not valid"
+            },
+            "phone": {
+              required: "Required field",
+            }
+            "last_name": {
+              required: "Required field",
+              minlength: "Enter your full last name",
+            }
+            "first_name": {
+              required: "Required field",
+              minlength: "Enter your full name",
+            }
+            "language_preference": {
+              required: "Required field",
+            }
+            "street": {
+              required: "Required field",
+            }
+            "apt": {
+              required: "Required field",
+            }
+            "address": {
+              required: "Required field",
+            }
+            "city": {
+              required: "Required field",
+            }
+            "zip_code": {
+              required: "Required field",
+            }
+            "address_lookup": {
+              required: "Required field",
+            }
+        }
+    });
+});
+
 
 
 

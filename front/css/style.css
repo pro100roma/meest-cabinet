@@ -656,3 +656,8 @@ tr:nth-child(even) {
 .iti {
   width: 100%;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+}
