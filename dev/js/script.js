@@ -163,9 +163,6 @@ $(function() {
               required: true,
               minlength: 3,
             },
-            "language_preference": {
-              required: true,
-            },
             "street": {
               required: true,
             },
@@ -173,12 +170,6 @@ $(function() {
               required: true,
             },
             "address": {
-              required: true,
-            },
-            "city": {
-              required: true,
-            },
-            "zip_code": {
               required: true,
             },
             "province": {
@@ -201,9 +192,6 @@ $(function() {
               required: "Required field",
               minlength: "Enter your full name",
             },
-            "language_preference": {
-              required: "Required field",
-            },
             "street": {
               required: "Required field",
             },
@@ -211,12 +199,6 @@ $(function() {
               required: "Required field",
             },
             "address": {
-              required: "Required field",
-            },
-            "city": {
-              required: "Required field",
-            },
-            "zip_code": {
               required: "Required field",
             },
             "province": {
