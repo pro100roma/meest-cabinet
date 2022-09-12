@@ -173,6 +173,7 @@ body{
 .form-row{
   width: 100%;
   margin-bottom: 20px;
+  position: relative;
   .label{
     font-weight: 500;
     font-size: 12px;
@@ -365,13 +366,7 @@ body{
 }
 
 .flex-input{
-  .input{
-    width: calc(33.3% - 11px);
-    margin-right: 11px;
-    &:last-of-type{
-      margin-right: 0;
-    }
-  }
+  column-gap: 11px;
 }
 
 .end{
@@ -691,6 +686,13 @@ tr:nth-child(even) {
 .form-flex{
   column-gap: 20px;
 }
+
+.iti__flag-container .iti__selected-flag {
+  height: unset;
+  padding: 15px 6px 0 8px;
+}
+
+
 
 
 

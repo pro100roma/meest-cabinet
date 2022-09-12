@@ -1,8 +1,4 @@
 @media screen and (max-width: 1248px) {
-  .flex-input .input {
-    width: calc(33.3% - 5px);
-    margin-right: 5px;
-  }
   .form-row .input {
     padding: 13px 15px 13px;
   }

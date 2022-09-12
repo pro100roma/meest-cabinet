@@ -181,7 +181,9 @@ $(function() {
             "zip_code": {
               required: true,
             },
-
+            "province": {
+              required: true,
+            },
         },
         messages: {
             "email": {
@@ -215,6 +217,9 @@ $(function() {
               required: "Required field",
             },
             "zip_code": {
+              required: "Required field",
+            },
+            "province": {
               required: "Required field",
             },
         }
