@@ -34,6 +34,17 @@
   .form-flex {
     display: block;
   }
+  .form-flex .w25.parcel-weight {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .flex-columns3 {
+    width: 100%;
+    column-gap: 23px;
+  }
+  .flex-columns3 .w25 {
+    width: 33.3%;
+  }
 }
 @media screen and (max-width: 768px) {
   .login-form {
@@ -90,8 +101,5 @@
   .top-calculator {
     padding: 42px 15px 0px;
     border-bottom: 0;
-  }
-  .form-flex {
-    display: block;
   }
 }

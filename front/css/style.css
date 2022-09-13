@@ -58,6 +58,10 @@ body {
   width: 33.3%;
 }
 
+.w25 {
+  width: 25%;
+}
+
 .p-40 {
   padding: 40px 40px 30px;
 }
@@ -609,10 +613,15 @@ tr:nth-child(even) {
 }
 
 .flex-columns3 {
-  column-gap: 23px;
+  width: 75%;
+  column-gap: 13px;
 }
 .flex-columns3 .form-row {
   margin-bottom: 0;
+}
+
+.form-flex.del-details {
+  column-gap: 13px;
 }
 
 .calculator-popup {
@@ -627,6 +636,10 @@ tr:nth-child(even) {
 }
 .calculator-popup .end .sub-button {
   margin-right: 15px;
+}
+
+.form-flex .w25.parcel-weight .form-row {
+  margin-bottom: 0;
 }
 
 .mfp-bg {

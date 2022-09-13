@@ -47,7 +47,20 @@
 
 .form-flex{
 	display: block;
+	.w25.parcel-weight{
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
+
+.flex-columns3{
+	width: 100%;
+  column-gap: 23px;
+  .w25{
+  	width: 33.3%;
+  }
+}
+
 
 
 
@@ -130,8 +143,6 @@
   border-bottom: 0;
 }
 
-.form-flex{
-	display: block;
-}
+
 
 }
