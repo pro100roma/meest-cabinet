@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>new-parcel</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/intlTelInput.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -22,57 +23,47 @@
 					<div class="accordion-section">
 						<div class="section-name active d-flex ai bb">
 							<div class="number-bcg"><p>1</p></div>
-							<h2 class="h2">SEND FORM</h2>
+							<h2 class="h2">PARCEL DETAILS</h2>
 						</div>
 						<div class="section-sub-menu active bb">
-							<div class="form-flex-wrap d-flex">
-								<div class="left">
-									<form action="" class="form-flex">
-										<div class="form-row">
-											<label for="" class="label">Contact Phone</label>
-											<input type="text" class="input" name="your_email" placeholder="Contact Phone">
-										</div>
-										<div class="form-row">
-											<label for="" class="label">Last Name</label>
-											<input type="text" class="input" name="your_password" placeholder="Last Name">
-										</div>
-										<div class="form-row">
-											<label for="" class="label">Date of Birth</label>
-											<div class="flex-input d-flex jc">
-												<input type="text" class="input" name="your_password" placeholder="Year">
-												<input type="text" class="input" name="your_password" placeholder="Month">
-												<input type="text" class="input" name="your_password" placeholder="Day">
-											</div>
-										</div>
-										<div class="form-row">
-											<label for="" class="label">Create a password</label>
-											<input type="text" class="input" name="create_password" placeholder="Create a password">
-										</div>
-									</form>
+							<div class="form-flex-wrap  d-flex">
+								<div class="form-flex parcel-details d-flex ai">
+									<div class="form-row">
+										<label for="" class="label">Province/State</label>
+										<input type="text" class="input" name="province" placeholder="Province">
+									</div>
+									<div class="form-row">
+										<label for="" class="label">Country</label>
+										<input type="text" class="input" name="country" placeholder="Country">
+									</div>
 								</div>
-								<div class="right">
-									<form action="" class="form-flex">
+							</div>
+							<div class="form-flex del-details d-flex ai">
+								<div class="w25 parcel-weight">
+									<div class="form-row">
+										<label for="" class="label">Parcel Weight kg</label>
+										<input type="text" class="input" name="parcel_weight" placeholder="">
+									</div>
+								</div>
+								<div class="flex-columns3 d-flex ai jc">
+									<div class="w33">
 										<div class="form-row">
-											<label for="" class="label">Email</label>
-											<input type="text" class="input" name="email" placeholder="Email">
+											<label for="" class="label">Length cm</label>
+											<input type="text" class="input" name="length" placeholder="">
 										</div>
+									</div>
+									<div class="w33">
 										<div class="form-row">
-											<label for="" class="label">First Name</label>
-											<input type="text" class="input" name="first-name" placeholder="First Name">
+											<label for="" class="label">Height cm</label>
+											<input type="text" class="input" name="height" placeholder="">
 										</div>
+									</div>
+									<div class="w33">
 										<div class="form-row">
-											<label for="" class="label">Language preference</label>
-											<select name="language-preference" id="" class="input">
-												<option value="">Ukraine</option>
-												<option value="">Ukraine</option>
-												<option value="">Ukraine</option>
-											</select>
+											<label for="" class="label">Width cm</label>
+											<input type="text" class="input" name="width" placeholder="">
 										</div>
-										<div class="form-row">
-											<label for="" class="label">Repeat password</label>
-											<input type="text" class="input" name="repeat_password" placeholder="Password">
-										</div>
-									</form>
+									</div>
 								</div>
 							</div>
 							<div class="end">
@@ -83,24 +74,287 @@
 					<div class="accordion-section">
 						<div class="section-name d-flex ai bb">
 							<div class="number-bcg"><p>2</p></div>
-							<h2 class="h2">DELIVER TO</h2>
+							<h2 class="h2">METHOD OF DELIVERY</h2>
 						</div>
 						<div class="section-sub-menu bb">
 							<div class="form-flex-wrap d-flex">
 								<div class="left">
-									<form action="" class="form-flex">
+									<div class="d-flex ai">
+										<p class="h4">CANADA POST DROP-OFF RATES</p>
+										<a href=""><img src="img/info-circle.svg" alt=""></a>
+									</div>
+									<div>
+										<div class="check-row d-flex">
+											<div class="radio-check-row">
+												<input type="radio">
+												<span class="radio-but"></span>
+											</div>
+											<div class="info-check-row">
+												<div class="top-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Time</p>
+														<p class="h3">2-3 Weeks</p>
+													</div>
+													<div class="r d-flex ai">
+														<p class="h4">SEA</p>
+														<div class="img-type-delivery" >
+															<img src="img/boat.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="bottom-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Option</p>
+														<p class="h3">Home Delivery Regular</p>
+													</div>
+													<div class="r">
+														<p class="cost-deliver">124.50</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="check-row d-flex">
+											<div class="radio-check-row">
+												<input type="radio">
+												<span class="radio-but"></span>
+											</div>
+											<div class="info-check-row">
+												<div class="top-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Time</p>
+														<p class="h3">2-3 Weeks</p>
+													</div>
+													<div class="r d-flex ai">
+														<p class="h4">AIR</p>
+														<div class="img-type-delivery" >
+															<img src="img/air.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="bottom-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Option</p>
+														<p class="h3">Home Delivery Regular</p>
+													</div>
+													<div class="r">
+														<p class="cost-deliver">124.50</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="check-row d-flex">
+											<div class="radio-check-row">
+												<input type="radio">
+												<span class="radio-but"></span>
+											</div>
+											<div class="info-check-row">
+												<div class="top-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Time</p>
+														<p class="h3">2-3 Weeks</p>
+													</div>
+													<div class="r d-flex ai">
+														<p class="h4">SEA</p>
+														<div class="img-type-delivery" >
+															<img src="img/boat.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="bottom-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Option</p>
+														<p class="h3">Home Delivery Regular</p>
+													</div>
+													<div class="r">
+														<p class="cost-deliver">124.50</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="check-row d-flex">
+											<div class="radio-check-row">
+												<input type="radio">
+												<span class="radio-but"></span>
+											</div>
+											<div class="info-check-row">
+												<div class="top-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Time</p>
+														<p class="h3">2-3 Weeks</p>
+													</div>
+													<div class="r d-flex ai">
+														<p class="h4">AIR</p>
+														<div class="img-type-delivery" >
+															<img src="img/air.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="bottom-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Option</p>
+														<p class="h3">Home Delivery Regular</p>
+													</div>
+													<div class="r">
+														<p class="cost-deliver">124.50</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div class="d-flex ai">
+										<p class="h4">AGENT DROP-OFF RATES</p>
+										<a href=""><img src="img/info-circle.svg" alt=""></a>
+									</div>
+									<div>
+										<div class="check-row d-flex">
+											<div class="radio-check-row">
+												<input type="radio">
+												<span class="radio-but"></span>
+											</div>
+											<div class="info-check-row">
+												<div class="top-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Time</p>
+														<p class="h3">2-3 Weeks</p>
+													</div>
+													<div class="r d-flex ai">
+														<p class="h4">SEA</p>
+														<div class="img-type-delivery" >
+															<img src="img/boat.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="bottom-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Option</p>
+														<p class="h3">Home Delivery Regular</p>
+													</div>
+													<div class="r">
+														<p class="cost-deliver">124.50</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="check-row d-flex">
+											<div class="radio-check-row">
+												<input type="radio">
+												<span class="radio-but"></span>
+											</div>
+											<div class="info-check-row">
+												<div class="top-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Time</p>
+														<p class="h3">2-3 Weeks</p>
+													</div>
+													<div class="r d-flex ai">
+														<p class="h4">AIR</p>
+														<div class="img-type-delivery" >
+															<img src="img/air.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="bottom-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Option</p>
+														<p class="h3">Home Delivery Regular</p>
+													</div>
+													<div class="r">
+														<p class="cost-deliver">124.50</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="check-row d-flex">
+											<div class="radio-check-row">
+												<input type="radio">
+												<span class="radio-but"></span>
+											</div>
+											<div class="info-check-row">
+												<div class="top-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Time</p>
+														<p class="h3">2-3 Weeks</p>
+													</div>
+													<div class="r d-flex ai">
+														<p class="h4">SEA</p>
+														<div class="img-type-delivery" >
+															<img src="img/boat.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="bottom-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Option</p>
+														<p class="h3">Home Delivery Regular</p>
+													</div>
+													<div class="r">
+														<p class="cost-deliver">124.50</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="check-row d-flex">
+											<div class="radio-check-row">
+												<input type="radio">
+												<span class="radio-but"></span>
+											</div>
+											<div class="info-check-row">
+												<div class="top-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Time</p>
+														<p class="h3">2-3 Weeks</p>
+													</div>
+													<div class="r d-flex ai">
+														<p class="h4">AIR</p>
+														<div class="img-type-delivery" >
+															<img src="img/air.svg" alt="">
+														</div>
+													</div>
+												</div>
+												<div class="bottom-line d-flex jc">
+													<div class="l">
+														<p class="subtitle-check-row">Delivery Option</p>
+														<p class="h3">Home Delivery Regular</p>
+													</div>
+													<div class="r">
+														<p class="cost-deliver">124.50</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="end">
+								<button class="main-button">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-section">
+						<div class="section-name d-flex ai bb">
+							<div class="number-bcg"><p>3</p></div>
+							<h2 class="h2">SEND FORM</h2>
+						</div>
+						<form action="" class="form-user-address section-sub-menu bb">
+							<div class="form-flex-wrap d-flex">
+								<div class="left">
+									<div class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Address Lookup</label>
-											<select name="language-preference" id="" class="input">
-												<img src="img/flag.svg" alt="">
-												<option value="">Ukraine</option>
-												<option value="">Ukraine</option>
-												<option value="">Ukraine</option>
-											</select>
+											<div class="input address-lookup d-flex ai jc">
+												<img class="flag" src="img/flag.svg" alt="">
+												<select name="address_lookup" id="">
+													<option value="">Ukraine</option>
+													<option value="">Ukraine</option>
+													<option value="">Ukraine</option>
+												</select>
+											</div>
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Postal/ZIP Code</label>
-											<select name="language-preference" id="" class="input">
+											<select name="zip_code" id="" class="input">
 												<img src="img/flag.svg" alt="">
 												<option value="">Ukraine</option>
 												<option value="">Ukraine</option>
@@ -109,6 +363,114 @@
 										</div>
 										<div class="form-row">
 											<label for="" class="label">City</label>
+											<select name="city" id="" class="input">
+												<img src="img/flag.svg" alt="">
+												<option value="">Ukraine</option>
+												<option value="">Ukraine</option>
+												<option value="">Ukraine</option>
+											</select>
+										</div>
+										<div class="form-columns2 d-flex">
+											<div class="form-row">
+												<label for="" class="label">Street #</label>
+												<input type="text" class="input" name="street" placeholder="street">
+											</div>
+											<div class="form-row">
+												<label for="" class="label">Apt. #</label>
+												<input type="text" class="input" name="apt" placeholder="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div class="form-flex">
+										<div class="form-row">
+											<label for="" class="label">Province/State</label>
+											<input type="text" class="input" name="province" placeholder="Province">
+										</div>
+										<div class="form-row">
+											<label for="" class="label">Country</label>
+											<input type="text" class="input" name="country" placeholder="Country">
+										</div>
+										<div class="form-row">
+											<label for="" class="label">Language preference</label>
+											<select name="language_preference" id="Language" class="input">
+												<option value="1">Ukraine</option>
+												<option value="2">Ukraine</option>
+												<option value="3">Ukraine</option>
+											</select>
+										</div>
+										<div class="form-row last">
+											<label for="" class="label">Address</label>
+											<input type="password" class="input" name="address" placeholder="Address">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="divide mt-30 small-line">SENT BY</div>
+							<div class="form-flex-wrap d-flex">
+								<div class="left">
+									<div class="form-flex">
+										<div class="form-row">
+											<label for="" class="label">Phone #</label>
+											<input type="text" class="input phone" name="phone" placeholder="Phone">
+										</div>
+										<div class="form-row">
+											<label for="" class="label">Last Name</label>
+											<input type="text" class="input" name="last_name" placeholder="Last Name">
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div class="form-flex">
+										<div class="form-row">
+											<label for="email" class="label">Email</label>
+											<input type="email" class="input" name="email" placeholder="Email">
+										</div>
+										<div class="form-row">
+											<label for="" class="label">First Name</label>
+											<input type="text" class="input" name="first_name" placeholder="First Name">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="end">
+								<button class="main-button">CONTINUE</button>
+							</div>
+						</form>
+					</div>
+					<div class="accordion-section">
+						<div class="section-name d-flex ai bb">
+							<div class="number-bcg"><p>4</p></div>
+							<h2 class="h2">DELIVER TO</h2>
+						</div>
+						<div class="section-sub-menu bb">
+							<div class="divide">RECIPIENT ADDRESS</div>
+							<div class="form-flex-wrap d-flex">
+								<div class="left">
+									<form action="" class="form-flex">
+										<div class="form-row">
+											<label for="" class="label">Address Lookup</label>
+											<div class="input address-lookup d-flex ai jc">
+												<img class="flag" src="img/flag.svg" alt="">
+												<select name="address_lookup" id="">
+													<option value="">Ukraine</option>
+													<option value="">Ukraine</option>
+													<option value="">Ukraine</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-row">
+											<label for="" class="label">Index</label>
+											<select name="language-preference" id="" class="input">
+												<img src="img/flag.svg" alt="">
+												<option value="">Ukraine</option>
+												<option value="">Ukraine</option>
+												<option value="">Ukraine</option>
+											</select>
+										</div>
+										<div class="form-row">
+											<label for="" class="label">Rayon</label>
 											<select name="language-preference" id="" class="input">
 												<img src="img/flag.svg" alt="">
 												<option value="">Ukraine</option>
@@ -131,29 +493,25 @@
 								<div class="right">
 									<form action="" class="form-flex">
 										<div class="form-row">
-											<label for="" class="label">Email</label>
-											<input type="text" class="input" name="email" placeholder="Email">
+											<label for="" class="label">Province/State</label>
+											<input type="text" class="input" name="email" placeholder="Province/State">
 										</div>
 										<div class="form-row">
-											<label for="" class="label">First Name</label>
-											<input type="text" class="input" name="first-name" placeholder="First Name">
+											<label for="" class="label">Oblast</label>
+											<input type="text" class="input" name="first-name" placeholder="Oblast">
 										</div>
 										<div class="form-row">
-											<label for="" class="label">Language preference</label>
+											<label for="" class="label">City/Village</label>
 											<select name="language-preference" id="" class="input">
 												<option value="">Ukraine</option>
 												<option value="">Ukraine</option>
 												<option value="">Ukraine</option>
 											</select>
 										</div>
-										<div class="form-row">
-											<label for="" class="label">Repeat password</label>
-											<input type="text" class="input" name="repeat_password" placeholder="Password">
-										</div>
 									</form>
 								</div>
 							</div>
-							<div class="divide">SENT BY</div>
+							<div class="divide mt-30 small-line">DELIVER TO</div>
 							<div class="form-flex-wrap d-flex">
 								<div class="left">
 									<form action="" class="form-flex">
@@ -177,28 +535,12 @@
 											<label for="" class="label">First Name</label>
 											<input type="text" class="input" name="first-name" placeholder="First Name">
 										</div>
-									</form>
+								</form>
 								</div>
 							</div>
 							<div class="end">
 								<button class="main-button">CONTINUE</button>
 							</div>
-						</div>
-					</div>
-					<div class="accordion-section">
-						<div class="section-name d-flex ai bb">
-							<div class="number-bcg"><p>3</p></div>
-							<h2 class="h2">DELIVERY DETAILS</h2>
-						</div>
-						<div class="section-sub-menu active bb">
-						</div>
-					</div>
-					<div class="accordion-section">
-						<div class="section-name d-flex ai bb">
-							<div class="number-bcg"><p>4</p></div>
-							<h2 class="h2">METHOD OF DELIVERY</h2>
-						</div>
-						<div class="section-sub-menu active bb">
 						</div>
 					</div>
 					<div class="accordion-section">
@@ -214,7 +556,7 @@
 							<div class="number-bcg"><p>6</p></div>
 							<h2 class="h2">SIGNATURE</h2>
 						</div>
-						<div class="section-sub-menu active bb">
+						<div class="section-sub-menu bb">
 							<div>
 								<div class="signature-field"></div>
 								<div class="d-flex jc">
@@ -230,9 +572,23 @@
 					<div class="accordion-section">
 						<div class="section-name d-flex ai">
 							<div class="number-bcg"><p>7</p></div>
-							<h2 class="h2">CONFIRMATION</h2>
+							<h2 class="h2">PAYMENT</h2>
 						</div>
-						<div class="section-sub-menu active bb">
+						<div class="section-sub-menu bb">
+							<div class="payment-row d-flex">
+								<div class="">
+									<input type="radio">
+									<span></span>
+								</div>
+								<div class="pay-text">Pay at Agent's Location</div>
+							</div>
+							<div class="d-flex">
+								<img src="img/info-circle.svg" alt="">
+								Please note that we do not store credit/debit card numbers, nor do we share customer details with any 3rd parties.
+							</div>
+							<div class="end">
+								<button class="main-button">PRINT CONFIRMATION</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -274,6 +630,9 @@
 
 
 	<script src="js/jq/jq.js"></script>
+	<script src="js/tel-input/intlTelInput-jquery.min.js"></script>
+	<script src="js/popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/validation/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 	
 </body>

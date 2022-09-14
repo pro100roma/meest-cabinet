@@ -136,6 +136,10 @@ $(function() {
 $(function() {
     $(".phone").intlTelInput({
       allowDropdown: true,
+      initialCountry: "us",
+      separateDialCode: true,
+      preferredCountries: ["fr", "us", "gb"],
+
         // options here
     });
 });
