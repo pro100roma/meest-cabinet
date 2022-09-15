@@ -76,7 +76,14 @@
 								<div class="form-flex d-flex">
 									<div class="form-row">
 										<label for="" class="label">Create a password</label>
-										<input type="password" class="input" name="password" placeholder="Create a password">
+										<input type="password" class="input password" name="password" placeholder="Create a password">
+										<div class="error-message">
+											<div id="Length" class="glyphicon glyphicon-remove">Must be at least 8 charcters</div>
+											<div id="UpperCase" class="glyphicon glyphicon-remove">Must have atleast 1 upper case character</div>
+											<div id="LowerCase" class="glyphicon glyphicon-remove">Must have atleast 1 lower case character</div>
+											<div id="Numbers" class="glyphicon glyphicon-remove">Must have atleast 1 numeric character</div>
+											<div id="Symbols" class="glyphicon glyphicon-remove">Must have atleast 1 special character</div>
+										</div>
 									</div>
 									<div class="form-row">
 										<label for="" class="label">Repeat password</label>

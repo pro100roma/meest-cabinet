@@ -28,11 +28,56 @@ $(function() {
     $.validator.addMethod("emailRegex", function(value, element) {
         return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/i.test(value);
     }, "");
+});
 
+$(function() {
     $.validator.addMethod("passwordRegex", function(value, element) {
         return this.optional(element) || /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/i.test(value);
-    }, "Password must be a t least 8 characters, must have at least 1 upper case, 1 lower case, 1 numeric, 1 special character");
+    }, "");
+});
 
+function ValidatePassword() {
+  var rules = [{
+      Pattern: "[A-Z]",
+      Target: "UpperCase"
+    },
+    {
+      Pattern: "[a-z]",
+      Target: "LowerCase"
+    },
+    {
+      Pattern: "[0-9]",
+      Target: "Numbers"
+    },
+    {
+      Pattern: "[!@@#$%^&*]",
+      Target: "Symbols"
+    }
+  ];
+
+  //Just grab the password once
+  var password = $(this).val();
+
+  /*Length Check, add and remove class could be chained*/
+  /*I've left them seperate here so you can see what is going on */
+  /*Note the Ternary operators ? : to select the classes*/
+  $("#Length").removeClass(password.length > 8 ? "glyphicon-remove" : "glyphicon-ok");
+  $("#Length").addClass(password.length > 8 ? "glyphicon-ok" : "glyphicon-remove");
+  
+  /*Iterate our remaining rules. The logic is the same as for Length*/
+  for (var i = 0; i < rules.length; i++) {
+
+    $("#" + rules[i].Target).removeClass(new RegExp(rules[i].Pattern).test(password) ? "glyphicon-remove" : "glyphicon-ok"); 
+    $("#" + rules[i].Target).addClass(new RegExp(rules[i].Pattern).test(password) ? "glyphicon-ok" : "glyphicon-remove");
+      }
+    }
+
+    /*Bind our event to key up for the field. It doesn't matter if it's delete or not*/
+    $(document).ready(function() {
+      $(".password").on('keyup', ValidatePassword)
+    });
+
+$(function() {
     $(".login-form-valid").validate({
         rules: {
             "email": {
@@ -41,22 +86,24 @@ $(function() {
             },
             "password": {
                 required: true,
-                passwordRegex: true
-
-            }
+                passwordRegex: true,
+            },
         },
         messages: {
             "email": {
-                required: "You must enter an email",
-                emailRegex: "Email format not valid"
+                required: "You must enter a email name",
+                emailRegex: "Login format not valid"
             },
             "password": {
-                required: "Password is reguired",
-                passwordRegex: "Password must be a t least 8 characters, must have at least 1 upper case, 1 lower case, 1 numeric, 1 special character",
-            }
-        }
+                required: "",
+                passwordRegex: "",
+            },
+        },
     });
 });
+
+   
+
 
 
 $(function() {
@@ -68,7 +115,7 @@ $(function() {
             },
             "password": {
                 required: true,
-                passwordRegex: true
+                passwordRegex: true,
             },
             "password_confirm": {
               required: true,
@@ -102,8 +149,8 @@ $(function() {
                 emailRegex: "Login format not valid"
             },
             "password": {
-                required: "Password is reguired",
-                passwordRegex: "Password must be a t least 8 characters, must have at least 1 upper case, 1 lower case, 1 numeric, 1 special character",
+                required: "",
+                passwordRegex: "",
             },
             "password_confirm": {
               required: "Password is reguired",
@@ -129,7 +176,7 @@ $(function() {
               required: "Required field",
               minlength: "Enter your full name",
             },
-        }
+        },
     });
 });
 

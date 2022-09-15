@@ -787,3 +787,53 @@ tr:nth-child(even) {
   color: #0056A4;
   margin-left: 13px;
 }
+
+.glyphicon-remove {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: red;
+  position: relative;
+}
+.glyphicon-remove:before {
+  content: "";
+  background-image: url(../img/error.svg);
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -15px;
+  top: 25%;
+}
+
+.glyphicon-ok {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #2361A9;
+  position: relative;
+}
+.glyphicon-ok:before {
+  content: "";
+  background-image: url(../img/done.svg);
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -15px;
+  top: 25%;
+}
+
+.error-message {
+  padding-left: 15px;
+}
+
+.error-message {
+  display: none;
+}
+
+.password.error ~ .error-message {
+  display: block;
+}

@@ -24,9 +24,16 @@
 					<label for="" class="label">Enter your Email</label>
 					<input type="email" class="input" name="email" id="email" placeholder="Your Email">
 				</div>
-				<div class="form-row">
+				<div class="form-row password-valid">
 					<label for="" class="label">Enter your Password</label>
-					<input type="password" class="input" name="password" placeholder="Your Password">
+					<input type="password" class="input password" name="password" placeholder="Your Password">
+					<div class="error-message">
+						<div id="Length" class="glyphicon glyphicon-remove">Must be at least 8 charcters</div>
+						<div id="UpperCase" class="glyphicon glyphicon-remove">Must have atleast 1 upper case character</div>
+						<div id="LowerCase" class="glyphicon glyphicon-remove">Must have atleast 1 lower case character</div>
+						<div id="Numbers" class="glyphicon glyphicon-remove">Must have atleast 1 numeric character</div>
+						<div id="Symbols" class="glyphicon glyphicon-remove">Must have atleast 1 special character</div>
+					</div>
 				</div>
 				<button class="main-button">LOGIN</button>
 				<div class="link-login-form d-flex ai jc">
