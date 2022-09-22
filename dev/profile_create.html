@@ -14,8 +14,17 @@
 
 	<section class="profile-create">
 		<div class="container">
+			<div class="profile-create-menu">
+				<ul class="menu">
+					<li class="click-user-profile active">
+						<a href="#">USER PROFILE</a>
+					</li>
+					<li class="click-send-form"><a href="#">SEND FORM</a></li>
+					<li class="click-deliver-to"><a href="#">DELIVER TO</a></li>
+				</ul>
+			</div>
 			<div class="profile-create-wrap d-flex">
-				<div class="w33 form">
+				<div class="w33 form user-profile" style="display: block;">
 					<div class="profile-main-info bb p-40">
 						<div class="profile-header">
 							<div class="avtar-bcg"><img src="img/avatar.svg" alt=""></div>
@@ -39,11 +48,11 @@
 							<span class="h3">English</span>
 						</div>
 					</div>
-					<a href="" class="profile-button bb"><p class="h3">EDIT PROFILE</p></a>
+					<a href="" class="profile-button bb"><p class="h3">EDIT PROFILE</p></a> <br>
 					<a href="" class="profile-button"><p class="h3">CHANGE PASSWORD</p></a>
 				</div>
-				<div class="w33">
-					<div class="form  mb-10">
+				<div class="w33 send-form">
+					<div class="send-form-add-adress form  mb-10">
 						<div class="profile-header bb p-40">
 							<div class="avtar-bcg"><img src="img/geo.svg" alt=""></div>
 							<h3 class="fs18">SEND FORM</h3>
@@ -95,8 +104,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="w33">
-					<div class="form  mb-10">
+				<div class="w33 deliver-to">
+					<div class="send-form-add-adress form  mb-10">
 						<div class="profile-header bb p-40">
 							<div class="avtar-bcg"><img src="img/geo.svg" alt=""></div>
 							<h3 class="fs18">DELIVER TO</h3>
@@ -131,6 +140,12 @@
 	</section>
 
 	/*=include footer.html */
+
+	<script src="js/jq/jq.js"></script>
+	<script src="js/tel-input/intlTelInput-jquery.min.js"></script>
+	<script src="js/popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/validation/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
 	
 </body>
 </html>

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 body {
   font-family: "Montserrat";
+  background: #f8f9fa;
 }
 
 .container {
@@ -30,6 +31,10 @@ body {
   border-top: 1px solid #D8E0EB;
 }
 
+.br {
+  border-right: 1px solid #D8E0EB;
+}
+
 .bcg-white {
   background-color: #fff;
 }
@@ -54,6 +59,22 @@ body {
   margin-top: 30px;
 }
 
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
 .w33 {
   width: 33.3%;
 }
@@ -64,6 +85,10 @@ body {
 
 .p-40 {
   padding: 40px 40px 30px;
+}
+
+.grey-color {
+  color: rgba(27, 43, 60, 0.5);
 }
 
 .pad-profile {
@@ -92,6 +117,10 @@ body {
   line-height: 109%;
   letter-spacing: 0.02em;
   color: #2361A9;
+}
+
+.gumb {
+  display: none;
 }
 
 .logo {
@@ -139,6 +168,7 @@ body {
 
 .footer {
   padding: 33px 0 33px;
+  align-items: start;
 }
 .footer .right .skype {
   margin-right: 20px;
@@ -359,11 +389,11 @@ body {
 }
 
 .form-flex-wrap .left {
-  width: calc(50% - 30px);
+  width: calc(50% - 15px);
   margin-right: 30px;
 }
 .form-flex-wrap .right {
-  width: 50%;
+  width: calc(50% - 15px);
 }
 
 .flex-input {
@@ -402,7 +432,7 @@ body {
   position: absolute;
   top: 50%;
   right: 0;
-  width: 80%;
+  width: 77%;
 }
 .divide.small-line:after {
   width: 85%;
@@ -422,9 +452,10 @@ body {
   width: 33.3%;
 }
 
-.profile-main-info .profile-header {
-  margin-bottom: 30px;
+.profile-create-menu {
+  display: none;
 }
+
 .profile-main-info .profile-header .fs18 {
   margin-bottom: 8px;
 }
@@ -533,6 +564,7 @@ tr:nth-child(even) {
 }
 
 .dots-submenu {
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
@@ -540,6 +572,12 @@ tr:nth-child(even) {
   box-shadow: 0px 8px 10px #CECDCD;
   border-radius: 10px;
   width: 310px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dots-submenu.active {
+  display: block;
 }
 
 .line-dots-menu {
@@ -601,8 +639,8 @@ tr:nth-child(even) {
   background: #F8F9FA;
   border: 1px solid #D8E0EB;
   border-radius: 10px;
-  height: 240px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .top-create-account {
@@ -714,6 +752,8 @@ tr:nth-child(even) {
   border: 1px solid #D7D8D9;
   border-radius: 8px;
   margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
 .check-row:last-of-type {
   margin-bottom: 0;
@@ -751,14 +791,27 @@ tr:nth-child(even) {
   width: 100%;
 }
 
-.radio-check-row {
-  padding: 42px 15px;
-}
-.radio-check-row input {
+.input-drop-off {
   width: 0 !important;
   height: 0 !important;
   opacity: 0;
   display: block;
+  position: absolute;
+  top: 0;
+}
+.input-drop-off:checked + .radio-check-row .radio-but {
+  background-color: #fff;
+  background-image: url(../img/done-blue.svg);
+  background-repeat: no-repeat;
+  border: unset;
+  background-position: center;
+}
+.input-drop-off:checked + .radio-check-row {
+  background-color: #2361A9;
+}
+
+.radio-check-row {
+  padding: 42px 15px;
 }
 .radio-check-row .radio-but {
   width: 25px;
@@ -772,20 +825,61 @@ tr:nth-child(even) {
   display: block;
 }
 
-.payment-row {
+.check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check-input:checked + .payment_method .false-radio {
+  background-color: #2361A9;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+  border: unset;
+  background-position: center;
+}
+.check-input:checked + .payment_method {
   border: 1px solid #2361A9;
+}
+
+.false-radio {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #D7D8D9;
+}
+
+.payment_method-object {
+  width: calc(33.3% - 20px);
+  margin-bottom: 21px;
+  margin-right: 20px;
+}
+.payment_method-object:last-of-type {
+  margin-right: 0;
+}
+
+.payment_method {
+  border: 1px solid #D7D8D9;
   border-radius: 8px;
   padding: 22px 15px;
-  width: 300px;
-  margin-bottom: 21px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: 100%;
 }
-.payment-row .pay-text {
+.payment_method .text-pay {
+  margin-left: 40px;
+}
+.payment_method .text-pay p {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #0056A4;
-  margin-left: 13px;
 }
 
 .glyphicon-remove {
@@ -836,4 +930,160 @@ tr:nth-child(even) {
 
 .password.error ~ .error-message {
   display: block;
+}
+
+.input:hover {
+  border: 1px solid #2361A9;
+}
+
+.additional-information {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: rgba(27, 43, 60, 0.5);
+}
+.additional-information img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.parcel-content-table {
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 109%;
+  color: #1B2B3C;
+  text-align: left;
+}
+.parcel-content-table tr:nth-child(even) {
+  background-color: #F5F6F7;
+}
+.parcel-content-table .basket {
+  width: 22px;
+  height: 22px;
+}
+.parcel-content-table .quantities {
+  background-color: unset;
+  border: unset;
+  width: 100%;
+}
+
+.parcel-padding {
+  padding: 16px 20px;
+}
+
+.section-sub-menu.parcel-content {
+  padding: 0;
+}
+
+.par-content-check-info {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: rgba(27, 43, 60, 0.5);
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.par-content-check-info:last-of-type {
+  margin-bottom: 30px;
+}
+.par-content-check-info input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.par-content-check-info input:checked ~ .false_checkbox {
+  background-color: #2361A9;
+  background-image: url(../img/done-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+  border: unset;
+}
+.par-content-check-info .false_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 8px;
+  border: 1px solid #D7D8D9;
+}
+.par-content-check-info a {
+  font-weight: 600;
+  text-decoration-line: underline;
+  color: #2361A9;
+}
+
+.form-parcel-content {
+  padding: 30px;
+}
+
+.new-parcel-page {
+  padding: 50px 0 60px;
+}
+
+.drop-off-rates {
+  margin-right: 5px;
+}
+
+.drop-off-rates-all-info {
+  margin-bottom: 24px;
+  min-height: 30px;
+}
+
+.mobile-parcel-content-table {
+  display: none;
+}
+
+.pay-method-wrap {
+  width: 50%;
+}
+
+.form-flex.mob-2col {
+  display: flex;
+}
+
+.form-row.expiration {
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.form-row.expiration label {
+  width: 100%;
+}
+.form-row.expiration .input-flex {
+  width: 100%;
+}
+.form-row.expiration .input-flex input {
+  width: 50%;
+}
+
+.form-row.cvc {
+  width: 25%;
+}
+
+.card-number {
+  background-image: url(../img/method-card.svg);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 15px);
+  background-position-y: 50%;
+  background-size: 35px;
+}
+
+.modile-delivery-price {
+  display: none;
+}
+
+.info-circle {
+  width: 22px;
+  height: 22px;
 }

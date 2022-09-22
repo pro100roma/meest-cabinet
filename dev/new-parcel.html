@@ -15,7 +15,7 @@
 	/*=include header.html */
 
 
-	<section>
+	<section class="new-parcel-page">
 		<div class="container">
 			<h2 class="heading mb">NEW PARCEL</h2>
 			<div class="accordion-wrap-flex d-flex">
@@ -38,7 +38,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="form-flex del-details d-flex ai">
+							<div class="form-flex del-details d-flex ai mb-30">
 								<div class="w25 parcel-weight">
 									<div class="form-row">
 										<label for="" class="label">Parcel Weight kg</label>
@@ -77,18 +77,18 @@
 							<h2 class="h2">METHOD OF DELIVERY</h2>
 						</div>
 						<div class="section-sub-menu bb">
-							<div class="form-flex-wrap d-flex">
+							<div class="drop-off-rates-items form-flex-wrap d-flex mb-30">
 								<div class="left">
-									<div class="d-flex ai">
-										<p class="h4">CANADA POST DROP-OFF RATES</p>
-										<a href=""><img src="img/info-circle.svg" alt=""></a>
+									<div class="drop-off-rates-all-info d-flex ai">
+										<p class="drop-off-rates h4">CANADA POST DROP-OFF RATES</p>
+										<a href="" class="info-circle"><img src="img/info-circle.svg" alt=""></a>
 									</div>
 									<div>
 										<div class="check-row d-flex">
-											<div class="radio-check-row">
-												<input type="radio">
+											<input type="checkbox" class="input-drop-off" id="checkbox6" name="check1" onclick="onlyOne(this)">
+											<label class="radio-check-row" for="checkbox6">
 												<span class="radio-but"></span>
-											</div>
+											</label>
 											<div class="info-check-row">
 												<div class="top-line d-flex jc">
 													<div class="l">
@@ -114,10 +114,10 @@
 											</div>
 										</div>
 										<div class="check-row d-flex">
-											<div class="radio-check-row">
-												<input type="radio">
+											<input type="checkbox" class="input-drop-off" id="checkbox7" name="check1" onclick="onlyOne(this)">
+											<label class="radio-check-row" for="checkbox7">
 												<span class="radio-but"></span>
-											</div>
+											</label>
 											<div class="info-check-row">
 												<div class="top-line d-flex jc">
 													<div class="l">
@@ -143,10 +143,10 @@
 											</div>
 										</div>
 										<div class="check-row d-flex">
-											<div class="radio-check-row">
-												<input type="radio">
+											<input type="checkbox" class="input-drop-off" id="checkbox8" name="check1" onclick="onlyOne(this)">
+											<label class="radio-check-row" for="checkbox8">
 												<span class="radio-but"></span>
-											</div>
+											</label>
 											<div class="info-check-row">
 												<div class="top-line d-flex jc">
 													<div class="l">
@@ -172,10 +172,10 @@
 											</div>
 										</div>
 										<div class="check-row d-flex">
-											<div class="radio-check-row">
-												<input type="radio">
+											<input type="checkbox" class="input-drop-off" id="checkbox9" name="check1" onclick="onlyOne(this)">
+											<label class="radio-check-row" for="checkbox9">
 												<span class="radio-but"></span>
-											</div>
+											</label>
 											<div class="info-check-row">
 												<div class="top-line d-flex jc">
 													<div class="l">
@@ -203,16 +203,16 @@
 									</div>
 								</div>
 								<div class="right">
-									<div class="d-flex ai">
-										<p class="h4">AGENT DROP-OFF RATES</p>
-										<a href=""><img src="img/info-circle.svg" alt=""></a>
+									<div class="drop-off-rates-all-info d-flex ai">
+										<p class="drop-off-rates h4">AGENT DROP-OFF RATES</p>
+										<a href="" class="info-circle"><img src="img/info-circle.svg" alt=""></a>
 									</div>
 									<div>
 										<div class="check-row d-flex">
-											<div class="radio-check-row">
-												<input type="radio">
+											<input type="checkbox" class="input-drop-off" id="checkbox10" name="check2" onclick="onlyOne(this)">
+											<label class="radio-check-row" for="checkbox10">
 												<span class="radio-but"></span>
-											</div>
+											</label>
 											<div class="info-check-row">
 												<div class="top-line d-flex jc">
 													<div class="l">
@@ -238,10 +238,10 @@
 											</div>
 										</div>
 										<div class="check-row d-flex">
-											<div class="radio-check-row">
-												<input type="radio">
+											<input type="checkbox" class="input-drop-off" id="checkbox11" name="check2" onclick="onlyOne(this)">
+											<label class="radio-check-row" for="checkbox11">
 												<span class="radio-but"></span>
-											</div>
+											</label>
 											<div class="info-check-row">
 												<div class="top-line d-flex jc">
 													<div class="l">
@@ -267,10 +267,10 @@
 											</div>
 										</div>
 										<div class="check-row d-flex">
-											<div class="radio-check-row">
-												<input type="radio">
+											<input type="checkbox" class="input-drop-off" id="checkbox12" name="check2" onclick="onlyOne(this)">
+											<label class="radio-check-row" for="checkbox12">
 												<span class="radio-but"></span>
-											</div>
+											</label>
 											<div class="info-check-row">
 												<div class="top-line d-flex jc">
 													<div class="l">
@@ -296,10 +296,10 @@
 											</div>
 										</div>
 										<div class="check-row d-flex">
-											<div class="radio-check-row">
-												<input type="radio">
+											<input type="checkbox" class="input-drop-off" id="checkbox13" name="check2" onclick="onlyOne(this)">
+											<label class="radio-check-row" for="checkbox13">
 												<span class="radio-but"></span>
-											</div>
+											</label>
 											<div class="info-check-row">
 												<div class="top-line d-flex jc">
 													<div class="l">
@@ -548,7 +548,173 @@
 							<div class="number-bcg"><p>5</p></div>
 							<h2 class="h2">PARCEL CONTENT & QUANTITIES</h2>
 						</div>
-						<div class="section-sub-menu active bb">
+						<div class="section-sub-menu parcel-content bb">
+							<table class="parcel-content-table">
+							  	<tr>
+							    	<th class="parcel-padding h4">GROUP NAME</th>
+							    	<th class="parcel-padding h4">QUANTITIES</th>
+							    	<th class="parcel-padding h4">DESCRIPTION</th>
+							  	</tr>
+							  	<tr>
+							    	<td class="parcel-padding br">Auto, Moto & bicycle spare parts</td>
+							    	<td class="parcel-padding br">
+							    		<select name="" id="" class="quantities">
+							    			<option>0</option>
+							    			<option>0</option>
+							    			<option>0</option>
+							    		</select>
+							    	</td>
+							    	<td class="parcel-padding grey-color">Description of content</td>
+							    	<td class="parcel-padding end"><a href="" class="basket"><img  src="img/basket.svg" alt=""></a></td>
+							  	</tr>
+							  	<tr>
+							    	<td class="parcel-padding br">Auto, Moto & bicycle spare parts</td>
+							    	<td class="parcel-padding br">
+							    		<select name="" id="" class="quantities">
+							    			<option>0</option>
+							    			<option>0</option>
+							    			<option>0</option>
+							    		</select>
+							    	</td>
+							    	<td class="parcel-padding grey-color">Description of content</td>
+							    	<td class="parcel-padding end"><a href="" class="basket"><img  src="img/basket.svg" alt=""></a></td>
+							  	</tr>
+							  	<tr>
+							    	<td class="parcel-padding br">Auto, Moto & bicycle spare parts</td>
+							    	<td class="parcel-padding br">
+							    		<select name="" id="" class="quantities">
+							    			<option>0</option>
+							    			<option>0</option>
+							    			<option>0</option>
+							    		</select>
+							    	</td>
+							    	<td class="parcel-padding grey-color">Description of content</td>
+							    	<td class="parcel-padding end"><a href="" class="basket"><img  src="img/basket.svg" alt=""></a></td>
+							  	</tr>
+							  	<tr>
+							    	<td class="parcel-padding br">Auto, Moto & bicycle spare parts</td>
+							    	<td class="parcel-padding br">
+							    		<select name="" id="" class="quantities">
+							    			<option>0</option>
+							    			<option>0</option>
+							    			<option>0</option>
+							    		</select>
+							    	</td>
+							    	<td class="parcel-padding grey-color">Description of content</td>
+							    	<td class="parcel-padding end"><a href="" class="basket"><img  src="img/basket.svg" alt=""></a></td>
+							  	</tr>
+							  	<tr>
+							    	<td class="parcel-padding br">Auto, Moto & bicycle spare parts</td>
+							    	<td class="parcel-padding br">
+							    		<select name="" id="" class="quantities">
+							    			<option>0</option>
+							    			<option>0</option>
+							    			<option>0</option>
+							    		</select>
+							    	</td>
+							    	<td class="parcel-padding grey-color">Description of content</td>
+							    	<td class="parcel-padding end"><a href="" class="basket"><img  src="img/basket.svg" alt=""></a></td>
+							  	</tr>
+							  	<tr>
+							    	<td class="parcel-padding br">Auto, Moto & bicycle spare parts</td>
+							    	<td class="parcel-padding br">
+							    		<select name="" id="" class="quantities">
+							    			<option>0</option>
+							    			<option>0</option>
+							    			<option>0</option>
+							    		</select>
+							    	</td>
+							    	<td class="parcel-padding grey-color">Description of content</td>
+							    	<td class="parcel-padding end"><a href="" class="basket"><img  src="img/basket.svg" alt=""></a></td>
+							  	</tr>
+							  	<tr>
+							  		<td class="parcel-padding br"><a href="">Add new item</a></td>
+							  		<td class="parcel-padding br"></td>
+							  		<td></td>
+							  		<td></td>
+							  	</tr>
+							</table>
+							<div class="mobile-parcel-content-table">
+								<div class="item-parcel-cont-quant">
+									<div class="sect top d-flex jc ai">
+										<div>
+											<p class="p-cont-name">GROUP NAME</p>
+											<span class="p-cont-subname">Auto, Moto & bicycle spare parts</span> 
+										</div>
+										<a href="" class="basket"><img src="img/basket.svg" alt=""></a>
+									</div>
+									<div class="sect middle d-flex ai jc">
+										<p class="p-cont-name">QUANTITIES</p>
+										<div class="input-group">
+											<span class="minus"><img src="img/minus.svg" alt=""></span>
+											<input class="number-input" type="number">
+											<span class="plus"><img src="img/plus.svg" alt=""></span>
+										</div>
+									</div>
+									<div class="sect bottom">
+										<p class="p-cont-name">DESCRIPTION</p>
+										<span class="p-cont-subname">Description of content</span>
+									</div>
+								</div>
+								<div class="item-parcel-cont-quant">
+									<div class="sect top d-flex jc ai">
+										<div>
+											<p class="p-cont-name">GROUP NAME</p>
+											<span class="p-cont-subname">Auto, Moto & bicycle spare parts</span> 
+										</div>
+										<a href="" class="basket"><img src="img/basket.svg" alt=""></a>
+									</div>
+									<div class="sect middle d-flex ai jc">
+										<p class="p-cont-name">QUANTITIES</p>
+										<div class="input-group">
+											<span class="minus"><img src="img/minus.svg" alt=""></span>
+											<input class="number-input" type="number">
+											<span class="plus"><img src="img/plus.svg" alt=""></span>
+										</div>
+									</div>
+									<div class="sect bottom">
+										<p class="p-cont-name">DESCRIPTION</p>
+										<span class="p-cont-subname">Description of content</span>
+									</div>
+								</div>
+								<a class="add-new-item">
+									<p>Add new item</p>
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.99898 5.95638C6.98945 5.67063 6.87438 5.39824 6.67543 5.1909L2.02751 0.358664C1.73581 0.0577754 1.30442 -0.0658818 0.895824 0.0340156C0.487245 0.134092 0.16336 0.442469 0.046493 0.843281C-0.0705501 1.24408 0.0369721 1.67629 0.32867 1.97719L4.18992 6L0.328671 10.0228C0.0369708 10.3237 -0.0705497 10.7559 0.0464934 11.1567C0.163368 11.5575 0.487233 11.8659 0.895825 11.966C1.3044 12.0659 1.73579 11.9422 2.02751 11.6413L6.67543 6.80909C6.89556 6.57997 7.01227 6.2724 6.99898 5.95638Z" fill="#fff"/>
+									</svg>
+								</a>
+							</div>
+							
+							
+							<div class="form-flex-wrap form-parcel-content">
+								<div class="form-flex d-flex ai">
+									<div class="form-row">
+										<label for="" class="label">Declared Value*</label>
+										<input type="" class="input" name="" placeholder="">
+									</div>
+									<div class="form-row">
+										<label for="" class="label">Declared Value*</label>
+										<input type="" class="input" name="" placeholder="">
+									</div>
+								</div>
+								<div class="form-row">
+									<label for="" class="label">Additional Information</label>
+									<input type="" class="input" name="" placeholder="">
+								</div>
+								<label for="checkbox" class="par-content-check-info">
+									<input type="checkbox" id="checkbox">
+									<span class="false_checkbox"></span>
+									I, the sender, confirm that the above information is true and correct and that my shipment does not contain any dangerous or prohibited goods. I accept the <a href="">Conditions of Carriage.</a>
+								</label>
+								<label for="checkbox2" class="par-content-check-info">
+									<input type="checkbox" id="checkbox2">
+									<span class="false_checkbox"></span>
+									The sender hereby waives the purchase of additional insurance and accepts the <a href="">$60.00 limited liability.</a>
+								</label>
+								<div class="end">
+									<button class="main-button">CONTINUE</button>
+								</div>
+							</div> 
 						</div>
 					</div>
 					<div class="accordion-section">
@@ -557,9 +723,9 @@
 							<h2 class="h2">SIGNATURE</h2>
 						</div>
 						<div class="section-sub-menu bb">
-							<div>
-								<div class="signature-field"></div>
-								<div class="d-flex jc">
+							<div id="canvas_width" width="100%">
+								<canvas id="canvas" class="signature-field"></canvas>
+								<div class="additional-information d-flex mb-30">
 									<img class="info-circle" src="img/info-circle.svg" alt="">
 									<p>Please note that we do not store credit/debit card numbers, nor do we share customer details with any 3rd parties.</p>
 								</div>
@@ -574,17 +740,22 @@
 							<div class="number-bcg"><p>7</p></div>
 							<h2 class="h2">PAYMENT</h2>
 						</div>
-						<div class="section-sub-menu bb">
-							<div class="payment-row d-flex">
-								<div class="">
-									<input type="radio">
-									<span></span>
-								</div>
-								<div class="pay-text">Pay at Agent's Location</div>
+						<div class="section-sub-menu payment bb">
+							<div class="payment_method-object w100">
+								<input class="check-input" type="checkbox" id="checkbox3">
+								<label for="checkbox3" class="payment_method">
+									<span class="false-radio"></span>
+									<div class="text-pay">
+										<p>Pay at Agent's Location</p>
+									</div>
+									
+								</label>
 							</div>
-							<div class="d-flex">
+							
+							
+							<div class="additional-information d-flex mb-30">
 								<img src="img/info-circle.svg" alt="">
-								Please note that we do not store credit/debit card numbers, nor do we share customer details with any 3rd parties.
+								Please note that we do not store credit/debit card numbers, nor do we <br>share customer details with any 3rd parties.
 							</div>
 							<div class="end">
 								<button class="main-button">PRINT CONFIRMATION</button>
@@ -592,7 +763,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="left">
+				<div class="delivery-price left">
 					<div class="small-form form new-parcel">
 						<h2 class="h2">DELIVERY PRICE</h2>
 						<div class="text bb">
@@ -627,6 +798,9 @@
 			</div>
 		</div>
 	</section>
+
+
+	/*=include footer.html */
 
 
 	<script src="js/jq/jq.js"></script>

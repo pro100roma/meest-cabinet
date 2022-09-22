@@ -54,17 +54,11 @@ function ValidatePassword() {
       Target: "Symbols"
     }
   ];
-
-  //Just grab the password once
   var password = $(this).val();
 
-  /*Length Check, add and remove class could be chained*/
-  /*I've left them seperate here so you can see what is going on */
-  /*Note the Ternary operators ? : to select the classes*/
   $("#Length").removeClass(password.length > 8 ? "glyphicon-remove" : "glyphicon-ok");
   $("#Length").addClass(password.length > 8 ? "glyphicon-ok" : "glyphicon-remove");
-  
-  /*Iterate our remaining rules. The logic is the same as for Length*/
+
   for (var i = 0; i < rules.length; i++) {
 
     $("#" + rules[i].Target).removeClass(new RegExp(rules[i].Pattern).test(password) ? "glyphicon-remove" : "glyphicon-ok"); 
@@ -72,10 +66,11 @@ function ValidatePassword() {
       }
     }
 
-    /*Bind our event to key up for the field. It doesn't matter if it's delete or not*/
     $(document).ready(function() {
       $(".password").on('keyup', ValidatePassword)
     });
+
+
 
 $(function() {
     $(".login-form-valid").validate({
@@ -253,6 +248,107 @@ $(function() {
         }
     });
 });
+
+
+$(".gumb").click(function(){
+  $(this).toggleClass('active');
+  $(".nav-menu").slideToggle(3000)
+});
+
+
+
+    $(".click-user-profile").click(function(){
+        $('.profile-create-wrap .w33').hide()
+        $(".profile-create-menu li").removeClass('active')
+        $(".user-profile").show()
+        $(this).addClass('active')
+        return false
+      });
+
+      $(".click-send-form").click(function(){
+        $('.profile-create-wrap .w33').hide()
+        $(".profile-create-menu li").removeClass('active')
+        $(".send-form").show()
+        $(this).addClass('active')
+        return false
+      });
+
+      $(".click-deliver-to").click(function(){
+        $('.profile-create-wrap .w33').hide()
+        $(".profile-create-menu li").removeClass('active')
+        $(".deliver-to").show()
+        $(this).addClass('active')
+        return false
+      });  
+
+
+$('.click-dots').click(function(){
+  $(this).find('.dots-submenu').toggleClass('active')
+})
+
+
+
+$(document).ready(function(){
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let coord = { x: 0, y: 0 };
+var w;
+w=$('#canvas_width').innerWidth();
+console.log(w)
+
+document.addEventListener("mousedown", start);
+document.addEventListener("mouseup", stop);
+window.addEventListener("resize", resize);
+
+resize();
+
+function resize() {
+  ctx.canvas.width = "100%";
+  ctx.canvas.height = 400;
+}
+function reposition(event) {
+  coord.x = event.clientX - canvas.offsetLeft;
+  coord.y = event.clientY - canvas.offsetTop;
+}
+function start(event) {
+  document.addEventListener("mousemove", draw);
+  reposition(event);
+}
+function stop() {
+  document.removeEventListener("mousemove", draw);
+}
+function draw(event) {
+  ctx.beginPath();
+  ctx.lineWidth = 5;
+  ctx.lineCap = "round";
+  ctx.strokeStyle = "#000";
+  ctx.moveTo(coord.x, coord.y);
+  reposition(event);
+  ctx.lineTo(coord.x, coord.y);
+  ctx.stroke();
+};
+})
+
+
+$('.modile-delivery-price .accordion-title').click(function(){
+  $(this).next().slideToggle(200)
+})
+
+
+function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check1')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+
+function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check2')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+
 
 
 
