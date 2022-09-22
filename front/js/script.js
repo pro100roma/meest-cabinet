@@ -216,6 +216,9 @@ $(function() {
             "province": {
               required: true,
             },
+            "country": {
+              required: true,
+            },
         },
         messages: {
             "email": {
@@ -245,14 +248,226 @@ $(function() {
             "province": {
               required: "Required field",
             },
+            "country": {
+              required: "Required field",
+            },
         }
     });
 });
 
 
+$(".form-parcel-details").validate({
+        rules: {
+            "province": {
+                required: true,
+            },
+            "country": {
+                required: true,
+                passwordRegex: true,
+            },
+            "parcel_weight": {
+              required: true,
+            },
+            "length": {
+              required: true,
+            },
+            "height": {
+              required: true,
+            },
+            "width": {
+              required: true,
+            },
+        },
+        messages: {
+            "email": {
+                required: "You must enter a email name",
+                emailRegex: "Login format not valid"
+            },
+            "password": {
+                required: "",
+                passwordRegex: "",
+            },
+            "password_confirm": {
+              required: "Password is reguired",
+              equalTo : "Enter the correct password"
+            },
+            "phone": {
+              required: "Required field",
+            },
+            "last_name": {
+              required: "Required field",
+              minlength: "Enter your full last name",
+            },
+            "year": {
+              required: "Required field",
+            },
+            "month": {
+              required: "Required field",
+            },
+            "day": {
+              required: "Required field",
+            },
+            "first_name": {
+              required: "Required field",
+              minlength: "Enter your full name",
+            },
+        },
+    });
+
+
+$(".form-deliver-to").validate({
+        rules: {
+            "province": {
+                required: true,
+            },
+            "oblast": {
+                required: true,
+                passwordRegex: true,
+            },
+            "street": {
+              required: true,
+            },
+            "apt": {
+              required: true,
+            },
+            "email": {
+                required: true,
+                emailRegex: true,
+            },
+            "phone": {
+              required: true,
+            },
+            "last_name": {
+              required: true,
+              minlength: 3,
+            },
+            "first_name": {
+              required: true,
+              minlength: 3,
+            },
+            
+        },
+        messages: {
+            "email": {
+                required: "You must enter a email name",
+                emailRegex: "Login format not valid"
+            },
+            "phone": {
+              required: "Required field",
+            },
+            "last_name": {
+              required: "Required field",
+              minlength: "Enter your full last name",
+            },
+            "apt": {
+              required: "Required field",
+            },
+            "street": {
+              required: "Required field",
+            },
+            "province": {
+              required: "Required field",
+            },
+            "oblast": {
+              required: "Required field",
+            },
+            "first_name": {
+              required: "Required field",
+              minlength: "Enter your full name",
+            },
+        },
+    });
+
+
+
+$(".form-parcel-content").validate({
+        rules: {
+           "declared_value": {
+              required: true,
+           },
+           "declared_value2": {
+              required: true,
+           },
+           "obligatory_checkbox": {
+              required: true,
+           },  
+        },
+        messages: {
+            "declared_value": {
+              required: "Required field",
+           },
+           "declared_value2": {
+              required: "Required field",
+           },
+           "obligatory_checkbox": {
+              required: "Required field",
+           },
+        },
+});
+
+
+
+$(".form-payment").validate({
+        rules: {
+           "card_number": {
+              required: true,
+              maxlength: 16,
+              number: true,
+           },
+           "first_name": {
+              required: true,
+              minlength: 3,
+           },
+           "last_name": {
+              required: true,
+              minlength: 3,
+           }, 
+           "expiration": {
+              required: true,
+              number: true,
+              maxlength: 2,
+           }, 
+           "exp_year": {
+              required: true,
+              number: true,
+              maxlength: 2,
+           },
+           "cvc": {
+              required: true,
+              number: true,
+              maxlength: 3,
+           },
+        },
+        messages: {
+           "card_number": {
+              required: "Required field",
+              maxlength: "Please enter no more than 16 characters.",
+              number: "Please enter only number"
+           },
+           "first_name": {
+              
+           },
+           "last_name": {
+              required: "Required field",
+              minlength: "Enter your full last name",
+           }, 
+           "expiration": {
+              required: "Required field",
+           }, 
+           "exp_year": {
+              required: "Required field",
+           },
+           "cvc": {
+              required: "Required field",
+           },
+        },
+});
+
+
+
 $(".gumb").click(function(){
   $(this).toggleClass('active');
-  $(".nav-menu").slideToggle(3000)
+  $(".nav-menu").slideToggle(400)
 });
 
 
@@ -333,6 +548,23 @@ function draw(event) {
 $('.modile-delivery-price .accordion-title').click(function(){
   $(this).next().slideToggle(200)
 })
+
+$('.minus').click( function () {
+  let total = $(this).next();
+  if (total.val() > 1) {
+      total.val(+total.val() - 1);
+      total.trigger('change')
+  }
+       // $(this).parents('.shopping-card-row').find('.price-shop-wrap strong').text(quantity * amount)
+});
+
+    // Увеличиваем на 1
+$('.plus').click(function () {
+  let total = $(this).prev();
+  total.val(+total.val() + 1);
+  total.trigger('change')
+      //  $(this).parents('.shopping-card-row').find('.price-shop-wrap strong').text(quantity * amount)
+});
 
 
 

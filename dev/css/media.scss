@@ -112,7 +112,6 @@
 
 .header {
   position: relative;
-  border-bottom: 1px solid #D8E0EB;
 }
 
 header{
@@ -148,12 +147,15 @@ header{
 	top: 101%;
 	width: calc(100% + 30px);
 	margin-left: -15px;
-	background-color: #fff;
+	background-color: #f8f9fa;
+	height: 100vh;
+	z-index: 10;
 	.link-menu{
 		margin-right: 0;
 	  padding: 20px 15px;
 	  transition: 0.3s;
 	  border-bottom: 1px solid #D8E0EB;
+	  background-color: #fff;
 	  a{
 	  	display: flex;
 	  }
@@ -261,16 +263,21 @@ header{
 	}
 }
 
-.parcel-content-table{
+/*.parcel-content-table{
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
+}*/
+
+.parcel-content-table{
+	display: none;
 }
 
 .promocode {
   width: 100%;
   border-radius: unset;
+  padding: 22px 20px 15px;
 }
 
 .p-cont-name{
@@ -354,7 +361,7 @@ header{
   width: 80%;
 }	
 
-.add-new-item{
+.add-new-item.mobile{
 	background: #2361A9;
 	padding: 20px;
 	display: flex;
@@ -378,6 +385,7 @@ header{
   bottom: 0;
   left: 0;
   width: 100%;
+	box-shadow: 0px -4px 10px rgba(90, 102, 115, 0.2);
   .accordion{
   	background-color: #fff;
   	padding: 22px 20px 15px;

@@ -85,7 +85,6 @@
   }
   .header {
     position: relative;
-    border-bottom: 1px solid #D8E0EB;
   }
   header {
     position: sticky;
@@ -116,13 +115,16 @@
     top: 101%;
     width: calc(100% + 30px);
     margin-left: -15px;
-    background-color: #fff;
+    background-color: #f8f9fa;
+    height: 100vh;
+    z-index: 10;
   }
   .nav-menu .link-menu {
     margin-right: 0;
     padding: 20px 15px;
     transition: 0.3s;
     border-bottom: 1px solid #D8E0EB;
+    background-color: #fff;
   }
   .nav-menu .link-menu a {
     display: flex;
@@ -217,15 +219,19 @@
   .profile-create-wrap .w33 .profile-button:last-of-type {
     margin-bottom: 0;
   }
+  /*.parcel-content-table{
+  	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+  }*/
   .parcel-content-table {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    display: none;
   }
   .promocode {
     width: 100%;
     border-radius: unset;
+    padding: 22px 20px 15px;
   }
   .p-cont-name {
     font-weight: 700;
@@ -298,21 +304,21 @@
   .divide::after {
     width: 80%;
   }
-  .add-new-item {
+  .add-new-item.mobile {
     background: #2361A9;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .add-new-item p {
+  .add-new-item.mobile p {
     font-weight: 500;
     font-size: 14px;
     line-height: 109%;
     text-decoration-line: underline;
     color: #FFFFFF;
   }
-  .add-new-item svg {
+  .add-new-item.mobile svg {
     transform: rotate(90deg);
   }
   .modile-delivery-price {
@@ -321,6 +327,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    box-shadow: 0px -4px 10px rgba(90, 102, 115, 0.2);
   }
   .modile-delivery-price .accordion {
     background-color: #fff;

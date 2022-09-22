@@ -11,27 +11,7 @@
 </head>
 <body>
 
-	<!DOCTYPE html>
-
-	<html lang="en">
-
-	<head>
-
-		<meta charset="UTF-8">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<title>header</title>
-
-		<link rel="stylesheet" href="css/reset.css">
-
-		<link rel="stylesheet" href="css/style.css">
-
-		<link rel="stylesheet" href="css/media.css">
-
-	</head>
-
-	<body>
+	
 
 	
 
@@ -143,21 +123,23 @@
 
 		
 
-	</body>
-
-	</html>
-
 	<section class="new-parcel-page">
 		<div class="container">
 			<h2 class="heading mb">NEW PARCEL</h2>
 			<div class="accordion-wrap-flex d-flex">
 				<div class="accordion-wrap mr">
 					<div class="accordion-section">
-						<div class="section-name active d-flex ai bb">
-							<div class="number-bcg"><p>1</p></div>
-							<h2 class="h2">PARCEL DETAILS</h2>
+						<div class="section-name active d-flex ai bb jc">
+							<div class="d-flex ai">
+								<div class="number-bcg"><p>1</p></div>
+								<h2 class="h2">PARCEL DETAILS</h2>
+							</div>
+							<a class="edit-but d-flex ai">
+								<img class="edit" src="img/edit.svg" alt="">
+								<p class="h4">EDIT</p>
+							</a>
 						</div>
-						<div class="section-sub-menu active bb">
+						<form action="" class="form-parcel-details section-sub-menu active bb">
 							<div class="form-flex-wrap  d-flex">
 								<div class="form-flex parcel-details d-flex ai">
 									<div class="form-row">
@@ -201,12 +183,18 @@
 							<div class="end">
 								<button class="main-button">CONTINUE</button>
 							</div>
-						</div>
+						</form>
 					</div>
 					<div class="accordion-section">
-						<div class="section-name d-flex ai bb">
-							<div class="number-bcg"><p>2</p></div>
-							<h2 class="h2">METHOD OF DELIVERY</h2>
+						<div class="section-name d-flex ai bb jc">
+							<div class="d-flex ai">
+								<div class="number-bcg"><p>2</p></div>
+								<h2 class="h2">METHOD OF DELIVERY</h2>
+							</div>
+							<a class="edit-but d-flex ai">
+								<img class="edit" src="img/edit.svg" alt="">
+								<p class="h4">EDIT</p>
+							</a>
 						</div>
 						<div class="section-sub-menu bb">
 							<div class="drop-off-rates-items form-flex-wrap d-flex mb-30">
@@ -465,14 +453,20 @@
 						</div>
 					</div>
 					<div class="accordion-section">
-						<div class="section-name d-flex ai bb">
-							<div class="number-bcg"><p>3</p></div>
-							<h2 class="h2">SEND FORM</h2>
+						<div class="section-name d-flex ai bb jc">
+							<div class="d-flex ai">
+								<div class="number-bcg"><p>3</p></div>
+								<h2 class="h2">SEND FORM</h2>
+							</div>
+							<a class="edit-but d-flex ai">
+								<img class="edit" src="img/edit.svg" alt="">
+								<p class="h4">EDIT</p>
+							</a>
 						</div>
 						<form action="" class="form-user-address section-sub-menu bb">
 							<div class="payment_method-flex d-flex jc">
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox20">
+									<input class="check-input" type="radio" id="checkbox20" name="check7">
 									<label for="checkbox20" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -482,7 +476,7 @@
 									</label>
 								</div>
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox21">
+									<input class="check-input" type="radio" id="checkbox21" name="check7">
 									<label for="checkbox21" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -492,7 +486,7 @@
 									</label>
 								</div>
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox22">
+									<input class="check-input" type="radio" id="checkbox22" name="check7">
 									<label for="checkbox22" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -604,14 +598,20 @@
 						</form>
 					</div>
 					<div class="accordion-section">
-						<div class="section-name d-flex ai bb">
-							<div class="number-bcg"><p>4</p></div>
-							<h2 class="h2">DELIVER TO</h2>
+						<div class="section-name d-flex ai bb jc">
+							<div class="d-flex ai">
+								<div class="number-bcg"><p>4</p></div>
+								<h2 class="h2">DELIVER TO</h2>
+							</div>
+							<a class="edit-but d-flex ai">
+								<img class="edit" src="img/edit.svg" alt="">
+								<p class="h4">EDIT</p>
+							</a>
 						</div>
-						<div class="section-sub-menu bb">
+						<form action="" class="form-deliver-to section-sub-menu bb">
 							<div class="payment_method-flex d-flex jc">
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox23">
+									<input class="check-input" type="radio" id="checkbox23" name="check5">
 									<label for="checkbox23" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -621,7 +621,7 @@
 									</label>
 								</div>
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox24">
+									<input class="check-input" type="radio" id="checkbox24" name="check5">
 									<label for="checkbox24" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -631,7 +631,7 @@
 									</label>
 								</div>
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox25">
+									<input class="check-input" type="radio" id="checkbox25" name="check5">
 									<label for="checkbox25" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -643,7 +643,7 @@
 							<div class="divide">RECIPIENT ADDRESS</div>
 							<div class="form-flex-wrap d-flex">
 								<div class="left">
-									<form action="" class="form-flex">
+									<div action="" class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Address Lookup</label>
 											<div class="input address-lookup d-flex ai jc">
@@ -680,20 +680,20 @@
 											</div>
 											<div class="form-row">
 												<label for="" class="label">Apt. #</label>
-												<input type="text" class="input" name="street" placeholder="">
+												<input type="text" class="input" name="apt" placeholder="">
 											</div>
 										</div>
-									</form>
+									</div>
 								</div>
 								<div class="right">
-									<form action="" class="form-flex">
+									<div action="" class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Province/State</label>
-											<input type="text" class="input" name="email" placeholder="Province/State">
+											<input type="text" class="input" name="province" placeholder="Province/State">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Oblast</label>
-											<input type="text" class="input" name="first-name" placeholder="Oblast">
+											<input type="text" class="input" name="oblast" placeholder="Oblast">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">City/Village</label>
@@ -703,45 +703,51 @@
 												<option value="">Ukraine</option>
 											</select>
 										</div>
-									</form>
+									</div>
 								</div>
 							</div>
 							<div class="divide mt-30 small-line">DELIVER TO</div>
 							<div class="form-flex-wrap d-flex">
 								<div class="left">
-									<form action="" class="form-flex">
+									<div class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Phone #</label>
-											<input type="text" class="input" name="your_email" placeholder="Phone">
+											<input type="text" class="input phone" name="phone" placeholder="Phone">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">Last Name</label>
-											<input type="text" class="input" name="your_password" placeholder="Last Name">
+											<input type="text" class="input" name="last_name" placeholder="Last Name">
 										</div>
-									</form>
+									</div>
 								</div>
 								<div class="right">
-									<form action="" class="form-flex">
+									<div class="form-flex">
 										<div class="form-row">
 											<label for="" class="label">Email</label>
 											<input type="text" class="input" name="email" placeholder="Email">
 										</div>
 										<div class="form-row">
 											<label for="" class="label">First Name</label>
-											<input type="text" class="input" name="first-name" placeholder="First Name">
+											<input type="text" class="input" name="first_name" placeholder="First Name">
 										</div>
-									</form>
+									</div>
 								</div>
 							</div>
 							<div class="end">
 								<button class="main-button">CONTINUE</button>
 							</div>
-						</div>
+						</form>
 					</div>
 					<div class="accordion-section">
-						<div class="section-name d-flex ai bb">
-							<div class="number-bcg"><p>5</p></div>
-							<h2 class="h2">PARCEL CONTENT & QUANTITIES</h2>
+						<div class="section-name d-flex ai bb jc">
+							<div class="d-flex ai">
+								<div class="number-bcg"><p>5</p></div>
+								<h2 class="h2">PARCEL CONTENT & QUANTITIES</h2>
+							</div>
+							<a class="edit-but d-flex ai">
+								<img class="edit" src="img/edit.svg" alt="">
+								<p class="h4">EDIT</p>
+							</a>
 						</div>
 						<div class="section-sub-menu parcel-content bb">
 							 <table class="parcel-content-table">
@@ -823,7 +829,14 @@
 							    	<td class="parcel-padding end"><a href="" class="basket"><img  src="img/basket.svg" alt=""></a></td>
 							  	</tr>
 							  	<tr>
-							  		<td class="parcel-padding br"><a href="">Add new item</a></td>
+							  		<td class="parcel-padding br">
+							  			<a class="add-new-item mobile">
+											<p>Add new item</p>
+											<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.99898 5.95638C6.98945 5.67063 6.87438 5.39824 6.67543 5.1909L2.02751 0.358664C1.73581 0.0577754 1.30442 -0.0658818 0.895824 0.0340156C0.487245 0.134092 0.16336 0.442469 0.046493 0.843281C-0.0705501 1.24408 0.0369721 1.67629 0.32867 1.97719L4.18992 6L0.328671 10.0228C0.0369708 10.3237 -0.0705497 10.7559 0.0464934 11.1567C0.163368 11.5575 0.487233 11.8659 0.895825 11.966C1.3044 12.0659 1.73579 11.9422 2.02751 11.6413L6.67543 6.80909C6.89556 6.57997 7.01227 6.2724 6.99898 5.95638Z" fill=" #2361A9"/>
+											</svg>
+										</a>
+							  		</td>
 							  		<td class="parcel-padding br"></td>
 							  		<td></td>
 							  		<td></td>
@@ -872,22 +885,22 @@
 										<span class="p-cont-subname">Description of content</span>
 									</div>
 								</div>
-								<a class="add-new-item">
+								<a class="add-new-item mobile">
 									<p>Add new item</p>
 									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M6.99898 5.95638C6.98945 5.67063 6.87438 5.39824 6.67543 5.1909L2.02751 0.358664C1.73581 0.0577754 1.30442 -0.0658818 0.895824 0.0340156C0.487245 0.134092 0.16336 0.442469 0.046493 0.843281C-0.0705501 1.24408 0.0369721 1.67629 0.32867 1.97719L4.18992 6L0.328671 10.0228C0.0369708 10.3237 -0.0705497 10.7559 0.0464934 11.1567C0.163368 11.5575 0.487233 11.8659 0.895825 11.966C1.3044 12.0659 1.73579 11.9422 2.02751 11.6413L6.67543 6.80909C6.89556 6.57997 7.01227 6.2724 6.99898 5.95638Z" fill="#fff"/>
 									</svg>
 								</a>
 							</div>
-							<div class="form-flex-wrap form-parcel-content">
+							<form action="" class="form-flex-wrap form-parcel-content">
 								<div class="form-flex d-flex ai">
 									<div class="form-row">
 										<label for="" class="label">Declared Value*</label>
-										<input type="" class="input" name="" placeholder="">
+										<input type="" class="input" name="declared_value" placeholder="">
 									</div>
 									<div class="form-row">
 										<label for="" class="label">Declared Value*</label>
-										<input type="" class="input" name="" placeholder="">
+										<input type="" class="input" name="declared_value2" placeholder="">
 									</div>
 								</div>
 								<div class="form-row">
@@ -895,7 +908,7 @@
 									<input type="" class="input" name="" placeholder="">
 								</div>
 								<label for="checkbox" class="par-content-check-info">
-									<input type="checkbox" id="checkbox">
+									<input type="checkbox" id="checkbox" name="obligatory_checkbox">
 									<span class="false_checkbox"></span>
 									I, the sender, confirm that the above information is true and correct and that my shipment does not contain any dangerous or prohibited goods. I accept the <a href="">Conditions of Carriage.</a>
 								</label>
@@ -907,13 +920,19 @@
 								<div class="end">
 									<button class="main-button">CONTINUE</button>
 								</div>
-							</div> 
+							</form> 
 						</div>
 					</div>
 					<div class="accordion-section">
-						<div class="section-name d-flex ai bb">
-							<div class="number-bcg"><p>6</p></div>
-							<h2 class="h2">SIGNATURE</h2>
+						<div class="section-name d-flex ai bb jc">
+							<div class="d-flex ai">
+								<div class="number-bcg"><p>6</p></div>
+								<h2 class="h2">SIGNATURE</h2>
+							</div>
+							<a class="edit-but d-flex ai">
+								<img class="edit" src="img/edit.svg" alt="">
+								<p class="h4">EDIT</p>
+							</a>
 						</div>
 						<div class="section-sub-menu bb">
 							<div id="canvas_width" width="100%">
@@ -929,14 +948,20 @@
 						</div>
 					</div>
 					<div class="accordion-section">
-						<div class="section-name d-flex ai">
-							<div class="number-bcg"><p>7</p></div>
-							<h2 class="h2">PAYMENT</h2>
+						<div class="section-name d-flex ai jc">
+							<div class="d-flex ai">
+								<div class="number-bcg"><p>7</p></div>
+								<h2 class="h2">PAYMENT</h2>
+							</div>
+							<a class="edit-but d-flex ai">
+								<img class="edit" src="img/edit.svg" alt="">
+								<p class="h4">EDIT</p>
+							</a>
 						</div>
-						<div class="section-sub-menu payment bb">
+						<form action="" class="form-payment section-sub-menu payment bb">
 							<div class="payment_method-flex d-flex jc">
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox26">
+									<input class="check-input" type="radio" id="checkbox26" name="check6">
 									<label for="checkbox26" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -945,7 +970,7 @@
 									</label>
 								</div>
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox27">
+									<input class="check-input" type="radio" id="checkbox27" name="check6">
 									<label for="checkbox27" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -954,7 +979,7 @@
 									</label>
 								</div>
 								<div class="payment_method-object w100">
-									<input class="check-input" type="checkbox" id="checkbox28">
+									<input class="check-input" type="radio" id="checkbox28" name="check6">
 									<label for="checkbox28" class="payment_method">
 										<span class="false-radio"></span>
 										<div class="text-pay">
@@ -976,25 +1001,29 @@
 								<div class="form-flex mob-2col d-flex">
 									<div class="form-row">
 										<label for="" class="label">First Name</label>
-										<input type="text" class="input" name="first-name" placeholder="First Name">
+										<input type="text" class="input" name="first_name" placeholder="First Name">
 									</div>
 									<div class="form-row">
 										<label for="" class="label">Last Name</label>
-										<input type="text" class="input" name="your_password" placeholder="Last Name">
+										<input type="text" class="input" name="last_name" placeholder="Last Name">
 									</div>
 								</div>
 								<div class="form-flex mob-2col d-flex">
 									<div class="form-row expiration d-flex">
 										<label for="" class="label">Expiration</label>
 										<div class="input-flex d-flex ai">
-											<input type="text" class="input mr-10" name="first-name" placeholder=""> 
-											/
-											<input type="text" class="input ml-10" name="first-name" placeholder="">
+											<div class="input-valid mr-10">
+												<input type="text" class="input" name="expiration" placeholder="00"> 
+											</div>
+											<div class="slash">/</div>
+											<div class="input-valid ml-10">
+												<input type="text" class="input" name="exp_year" placeholder="00">
+											</div>
 										</div>
 									</div>
 									<div class="form-row cvc">
 										<label for="" class="label">CVC</label>
-										<input type="text" class="input" name="first-name" placeholder="000">
+										<input type="text" class="input" name="cvc" placeholder="000">
 									</div>
 								</div>
 							</div>
@@ -1002,13 +1031,13 @@
 								<button class="sub-button mr-15">SKIP AND SAVE</button>
 								<button class="main-button">PAY</button>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 				<div class="delivery-price left">
 					<div class="small-form form new-parcel">
 						<h2 class="h2">DELIVERY PRICE</h2>
-						<div class="text bb">
+						<div class="text">
 							<div class="line d-flex ai jc">
 								<p>Item Price</p>
 								<span class="h3">$00.00</span>
@@ -1026,7 +1055,7 @@
 								<span class="h3">$00.00</span>
 							</div>
 						</div>
-						<div class="promocode d-flex ai jc">
+						<div class="promocode total-price d-flex ai jc">
 							<h2 class="h2">TOTAL PRICE</h2>
 							<p class="h2">$00.00</p>
 						</div>
@@ -1061,6 +1090,10 @@
 							</div>
 						</div>
 					</div>
+					<div class="promocode d-flex ai jc bb">
+						<h2 class="h2">PROMOCODE</h2>
+						<a class="h2 add">Add</a>
+					</div>
 					<div class="promocode d-flex ai jc">
 						<h2 class="h2">TOTAL PRICE</h2>
 						<p class="h2">$00.00</p>
@@ -1069,6 +1102,57 @@
 			</div>
 		</div>
 	</section>
+
+
+	
+
+
+	
+
+
+	
+
+
+		<footer class="bcg-white bt">
+
+
+			<div class="container">
+
+
+				<div class="footer d-flex jc">
+
+
+					<a href="" class="logo"><img src="img/logo.svg" alt="logo-meest"></a>
+
+
+					<div class="right d-flex">
+
+
+						<a href="" class="skype"><img src="img/skype.svg" alt=""></a>
+
+
+						<p>Please be advised all Online Money Transfer <br>are a subject a 24-hour <a href="">Verification Hold!</a></p>
+
+
+					</div>
+
+
+				</div>
+
+
+				
+
+
+			</div>
+
+
+		</footer>
+
+
+		
+
+
+	
 
 
 	<script src="js/jq/jq.js"></script>
