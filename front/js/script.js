@@ -518,7 +518,7 @@ window.addEventListener("resize", resize);
 resize();
 
 function resize() {
-  ctx.canvas.width = "100%";
+  ctx.canvas.width = 889;
   ctx.canvas.height = 400;
 }
 function reposition(event) {

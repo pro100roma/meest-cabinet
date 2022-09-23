@@ -248,18 +248,22 @@ body {
 }
 
 .form-row .input.address-lookup {
-  padding: 10px;
+  padding: unset;
 }
 
 .address-lookup select {
   border: none;
   background-repeat: no-repeat;
   background-size: 12px;
-  background-position: calc(100% - 4px) center;
+  background-position: calc(100% - 10px) center;
   width: 100%;
+  height: 45px;
 }
 .address-lookup select option {
   background: none;
+}
+.address-lookup .flag {
+  margin-left: 10px;
 }
 
 .login-form {
@@ -1002,7 +1006,7 @@ tr:nth-child(even) {
   letter-spacing: 0.02em;
   color: rgba(27, 43, 60, 0.5);
   cursor: pointer;
-  margin-bottom: 8px;
+  margin-bottom: 23px;
 }
 .par-content-check-info:last-of-type {
   margin-bottom: 30px;
@@ -1021,6 +1025,11 @@ tr:nth-child(even) {
   background-position: center;
   background-size: 12px;
   border: unset;
+}
+.par-content-check-info #obligatory_checkbox-error {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
 }
 .par-content-check-info .false_checkbox {
   position: absolute;
@@ -1138,3 +1147,9 @@ tr:nth-child(even) {
   height: 28px;
   margin-right: 5px;
 }
+
+/*.obligatory-checkbox.error #obligatory_checkbox-error{
+  position: absolute;
+  top: 100%;
+  left: 0;
+}*/
