@@ -45,6 +45,43 @@
 
 @media screen and (max-width: 991px){
 
+.h2 {
+  font-size: 14px;
+}
+
+.number-bcg p {
+  font-size: 16px;
+}
+
+.number-bcg {
+  max-width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.section-name{
+	.left{
+		width: 85%;
+	}
+}
+
+.edit-but{
+	width: 15%;
+	justify-content: end;
+	.edit {
+	  max-width: 22px;
+	  height: 22px;
+	  margin-right: 2px;
+	}
+	.h4{
+		font-style: 12px;
+	}
+} 
+
+.section-name {
+  padding: 14px 15px;
+}
+
 .mobile-parcel-content-table{
   display: block;
 }
@@ -422,6 +459,14 @@ header{
 	margin-bottom: 23px;
 }
 
+.promo-code-popup {
+  width: 60%;
+}
+
+.promo-code {
+  padding: 40px 65px 34px;
+}
+
 
 
 }
@@ -544,6 +589,17 @@ header{
 
 .payment_method .text-pay {
   margin-left: 35px;
+}
+
+.promo-code-popup {
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: end;
+}
+
+.promo-code {
+  padding: 94px 28px 54px;
+  width: 100%;
 }
 
 }

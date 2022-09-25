@@ -683,6 +683,8 @@ tr:nth-child(even) {
   border-radius: 10px;
   margin-bottom: 20px;
   cursor: pointer;
+  width: 100%;
+  height: 240px;
 }
 
 .top-create-account{
@@ -1164,7 +1166,7 @@ tr:nth-child(even) {
   }
 }
 
-.h2.add{
+.h2.promocode-add{
   font-weight: 600;
   text-decoration: underline;
 }
@@ -1183,11 +1185,34 @@ tr:nth-child(even) {
   }
 }
 
-/*.obligatory-checkbox.error #obligatory_checkbox-error{
-  position: absolute;
-  top: 100%;
-  left: 0;
-}*/
+.promo-code-popup{
+  width: 45%;
+  align-items: start;
+  margin: 0 auto;
+  .close{
+    margin-left: 10px;
+  }
+}
+
+.promo-code{
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 40px 85px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .heading{
+    margin-bottom: 15px;
+  }
+  p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1B2B3C;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
 
 
 

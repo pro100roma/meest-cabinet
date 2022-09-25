@@ -24,6 +24,19 @@ $(function() {
 });
 
 
+
+  $('.promocode-add').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    modal: true
+  });
+  $(document).on('click', '.popup-promocode.close', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+
+
+
 $(function() {
     $.validator.addMethod("emailRegex", function(value, element) {
         return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/i.test(value);
@@ -507,9 +520,7 @@ $(document).ready(function(){
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let coord = { x: 0, y: 0 };
-var w;
-w=$('#canvas_width').innerWidth();
-console.log(w)
+let canvasWidth = $('#canvas_width').innerWidth();
 
 document.addEventListener("mousedown", start);
 document.addEventListener("mouseup", stop);
@@ -518,8 +529,8 @@ window.addEventListener("resize", resize);
 resize();
 
 function resize() {
-  ctx.canvas.width = 889;
-  ctx.canvas.height = 400;
+  ctx.canvas.width = canvasWidth;
+  ctx.canvas.height = 240;
 }
 function reposition(event) {
   coord.x = event.clientX - canvas.offsetLeft;
@@ -534,7 +545,7 @@ function stop() {
 }
 function draw(event) {
   ctx.beginPath();
-  ctx.lineWidth = 5;
+  ctx.lineWidth = 3;
   ctx.lineCap = "round";
   ctx.strokeStyle = "#000";
   ctx.moveTo(coord.x, coord.y);
@@ -545,26 +556,8 @@ function draw(event) {
 })
 
 
-$('.modile-delivery-price .accordion-title').click(function(){
-  $(this).next().slideToggle(200)
-})
 
-$('.minus').click( function () {
-  let total = $(this).next();
-  if (total.val() > 1) {
-      total.val(+total.val() - 1);
-      total.trigger('change')
-  }
-       // $(this).parents('.shopping-card-row').find('.price-shop-wrap strong').text(quantity * amount)
-});
 
-    // Увеличиваем на 1
-$('.plus').click(function () {
-  let total = $(this).prev();
-  total.val(+total.val() + 1);
-  total.trigger('change')
-      //  $(this).parents('.shopping-card-row').find('.price-shop-wrap strong').text(quantity * amount)
-});
 
 
 

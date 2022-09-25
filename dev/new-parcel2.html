@@ -6,13 +6,12 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/intlTelInput.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-
 	/*=include header.html */
-
 	<section class="new-parcel-page">
 		<div class="container">
 			<h2 class="heading mb">NEW PARCEL</h2>
@@ -20,7 +19,7 @@
 				<div class="accordion-wrap mr">
 					<div class="accordion-section">
 						<div class="section-name active d-flex ai bb jc">
-							<div class="d-flex ai">
+							<div class="left d-flex ai">
 								<div class="number-bcg"><p>1</p></div>
 								<h2 class="h2">PARCEL DETAILS</h2>
 							</div>
@@ -77,7 +76,7 @@
 					</div>
 					<div class="accordion-section">
 						<div class="section-name d-flex ai bb jc">
-							<div class="d-flex ai">
+							<div class="left d-flex ai">
 								<div class="number-bcg"><p>2</p></div>
 								<h2 class="h2">METHOD OF DELIVERY</h2>
 							</div>
@@ -344,7 +343,7 @@
 					</div>
 					<div class="accordion-section">
 						<div class="section-name d-flex ai bb jc">
-							<div class="d-flex ai">
+							<div class="left d-flex ai">
 								<div class="number-bcg"><p>3</p></div>
 								<h2 class="h2">SEND FORM</h2>
 							</div>
@@ -489,7 +488,7 @@
 					</div>
 					<div class="accordion-section">
 						<div class="section-name d-flex ai bb jc">
-							<div class="d-flex ai">
+							<div class="left d-flex ai">
 								<div class="number-bcg"><p>4</p></div>
 								<h2 class="h2">DELIVER TO</h2>
 							</div>
@@ -630,7 +629,7 @@
 					</div>
 					<div class="accordion-section">
 						<div class="section-name d-flex ai bb jc">
-							<div class="d-flex ai">
+							<div class="left d-flex ai">
 								<div class="number-bcg"><p>5</p></div>
 								<h2 class="h2">PARCEL CONTENT & QUANTITIES</h2>
 							</div>
@@ -815,7 +814,7 @@
 					</div>
 					<div class="accordion-section">
 						<div class="section-name d-flex ai bb jc">
-							<div class="d-flex ai">
+							<div class="left d-flex ai">
 								<div class="number-bcg"><p>6</p></div>
 								<h2 class="h2">SIGNATURE</h2>
 							</div>
@@ -824,8 +823,8 @@
 								<p class="h4">EDIT</p>
 							</a>
 						</div>
-						<div class="section-sub-menu bb">
-							<div id="canvas_width" width="100%">
+						<div class="section-sub-menu bb" id="canvas_width">
+							<div width="100%">
 								<canvas id="canvas" class="signature-field"></canvas>
 								<div class="additional-information d-flex mb-30">
 									<img class="info-circle" src="img/info-circle.svg" alt="">
@@ -839,7 +838,7 @@
 					</div>
 					<div class="accordion-section">
 						<div class="section-name d-flex ai jc">
-							<div class="d-flex ai">
+							<div class="left d-flex ai">
 								<div class="number-bcg"><p>7</p></div>
 								<h2 class="h2">PAYMENT</h2>
 							</div>
@@ -952,7 +951,7 @@
 					</div>
 					<div class="promocode d-flex ai jc form">
 						<h2 class="h2">PROMOCODE</h2>
-						<a href=""><p class="h2">$00.00</p></a>	
+						<a href="#promo-popup" class="promocode-add h2">Add</a>	
 					</div>
 				</div>
 				<div class="modile-delivery-price">
@@ -982,7 +981,7 @@
 					</div>
 					<div class="promocode d-flex ai jc bb">
 						<h2 class="h2">PROMOCODE</h2>
-						<a class="h2 add">Add</a>
+						<a class="h2 promocode-add" href="#promo-popup">Add</a>
 					</div>
 					<div class="promocode d-flex ai jc">
 						<h2 class="h2">TOTAL PRICE</h2>
@@ -994,9 +993,19 @@
 	</section>
 
 
+	<div class="promo-code-popup d-flex mfp-hide white-popup-block" id="promo-popup">
+		<div class="promo-code">
+			<h2 class="heading">ADD PROMO CODE</h2>
+			<p>Please be advised all Online Money Transfer are a subject a 24-hour Verification Hold!</p>
+			<div class="form-row">
+				<label for="" class="label">Promo code</label>
+				<input type="" class="input" name="promo_code" placeholder="0000 0000">
+			</div>
+			<button class="main-button">ADD</button>
+		</div>
+		<a href="" class="popup-promocode close"><img src="img/close.svg" alt=""></a>
+	</div>
 	/*=include footer.html */
-
-
 	<script src="js/jq/jq.js"></script>
 	<script src="js/tel-input/intlTelInput-jquery.min.js"></script>
 	<script src="js/popup/jquery.magnific-popup.min.js"></script>
