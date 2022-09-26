@@ -5,23 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>profile-deliver</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/intlTelInput.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-
-
 	/*=include header.html */
-
-
 	<section class="profile pad-profile">
 		<div class="container">
 			<h2 class="heading mb">DELIVER TO</h2>
-			<div class="section-sub-menu deliver-to bb form">
-				<div class="divide">RECIPIENT ADDRESS</div>
+			<form action="" class="form-deliver-to section-sub-menu form bb">
+				<div class="divide">SENDER ADDRESS</div>
 				<div class="form-flex-wrap d-flex">
 					<div class="left">
-						<form action="" class="form-flex">
+						<div class="form-flex">
 							<div class="form-row">
 								<label for="" class="label">Address Lookup</label>
 								<div class="input address-lookup d-flex ai jc">
@@ -34,7 +32,7 @@
 								</div>
 							</div>
 							<div class="form-row">
-								<label for="" class="label">Index</label>
+								<label for="" class="label">Postal/ZIP Code</label>
 								<select name="language-preference" id="" class="input">
 									<img src="img/flag.svg" alt="">
 									<option value="">Ukraine</option>
@@ -43,8 +41,8 @@
 								</select>
 							</div>
 							<div class="form-row">
-								<label for="" class="label">Rayon</label>
-								<select name="language-preference" id="" class="input">
+								<label for="" class="label">City</label>
+								<select name="language-preference" id="" name="city" class="input">
 									<img src="img/flag.svg" alt="">
 									<option value="">Ukraine</option>
 									<option value="">Ukraine</option>
@@ -58,20 +56,20 @@
 								</div>
 								<div class="form-row">
 									<label for="" class="label">Apt. #</label>
-									<input type="text" class="input" name="street" placeholder="">
+									<input type="text" class="input" name="apt" placeholder="">
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
 					<div class="right">
-						<form action="" class="form-flex">
+						<div class="form-flex">
 							<div class="form-row">
 								<label for="" class="label">Province/State</label>
-								<input type="text" class="input" name="email" placeholder="Province/State">
+								<input type="text" class="input" name="province" placeholder="Province/State">
 							</div>
 							<div class="form-row">
 								<label for="" class="label">Oblast</label>
-								<input type="text" class="input" name="first-name" placeholder="Oblast">
+								<input type="text" class="input" name="oblast" placeholder="Oblast">
 							</div>
 							<div class="form-row">
 								<label for="" class="label">City/Village</label>
@@ -81,42 +79,47 @@
 									<option value="">Ukraine</option>
 								</select>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
-				<div class="divide mt-30 small-line">DELIVER TO</div>
+				<div class="divide mt-30 small-line">SENT BY</div>
 				<div class="form-flex-wrap d-flex">
 					<div class="left">
-						<form action="" class="form-flex">
+						<div class="form-flex">
 							<div class="form-row">
 								<label for="" class="label">Phone #</label>
-								<input type="text" class="input" name="your_email" placeholder="Phone">
+								<input type="text" class="input phone" name="phone" placeholder="Phone">
 							</div>
 							<div class="form-row">
 								<label for="" class="label">Last Name</label>
-								<input type="text" class="input" name="your_password" placeholder="Last Name">
+								<input type="text" class="input" name="last_name" placeholder="Last Name">
 							</div>
-						</form>
+						</div>
 					</div>
 					<div class="right">
-						<form action="" class="form-flex">
+						<div class="form-flex">
 							<div class="form-row">
 								<label for="" class="label">Email</label>
 								<input type="text" class="input" name="email" placeholder="Email">
 							</div>
 							<div class="form-row">
 								<label for="" class="label">First Name</label>
-								<input type="text" class="input" name="first-name" placeholder="First Name">
+								<input type="text" class="input" name="first_name" placeholder="First Name">
 							</div>
-					</form>
+						</div>
 					</div>
 				</div>
 				<div class="end">
 					<button class="sub-button">SAVE ADDRESS</button>
 				</div>
-			</div>		
+			</form>	
 		</div>
 	</section>
-	
+	/*=include footer.html */
+	<script src="js/jq/jq.js"></script>
+	<script src="js/tel-input/intlTelInput-jquery.min.js"></script>
+	<script src="js/popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/validation/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -91,6 +91,10 @@ body {
   color: rgba(27, 43, 60, 0.5);
 }
 
+.c-blue {
+  color: #2361A9;
+}
+
 .pad-profile {
   padding: 50px 0 70px;
 }
@@ -116,6 +120,23 @@ body {
   font-size: 14px;
   line-height: 109%;
   letter-spacing: 0.02em;
+  color: #2361A9;
+}
+
+.h4-black {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 109%;
+  letter-spacing: 0.02em;
+  color: #1B2B3C;
+}
+
+.h6 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 109%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   color: #2361A9;
 }
 
@@ -457,6 +478,7 @@ body {
 }
 
 .profile-create-wrap {
+  align-items: flex-start;
   column-gap: 30px;
 }
 .profile-create-wrap .w33 {
@@ -532,6 +554,7 @@ body {
 
 .profile .section-sub-menu {
   width: 70%;
+  display: block;
 }
 
 .name-sec-tb {
@@ -832,6 +855,8 @@ tr:nth-child(even) {
 
 .radio-check-row {
   padding: 42px 15px;
+  align-items: center;
+  display: flex;
 }
 .radio-check-row .radio-but {
   width: 25px;
@@ -1177,4 +1202,113 @@ tr:nth-child(even) {
   color: #1B2B3C;
   text-align: center;
   margin-bottom: 25px;
+}
+
+.top-line.mon-transfer .l {
+  width: calc(25% - 25px);
+  margin-right: 25px;
+}
+.top-line.mon-transfer .l:last-of-type {
+  margin-right: 0;
+}
+
+.bottom-line.mon-transfer .l {
+  width: calc(25% - 25px);
+  margin-right: 25px;
+}
+.bottom-line.mon-transfer .l:last-of-type {
+  margin-right: 0;
+}
+
+.check-row.mon-transfer .info-check-row {
+  width: 100%;
+}
+
+.drop-off-rates-items.mon-transfer {
+  width: 85%;
+}
+
+.profile-create-wrap .w33.user-profile br {
+  display: none;
+}
+
+.link-menu a.active:after {
+  width: 100%;
+}
+
+.order-history {
+  padding: 50px 0 100px;
+}
+
+.table-order-history {
+  display: block;
+}
+
+.mobile-order-history {
+  display: none;
+}
+
+.prohibited_items_popup {
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+}
+.prohibited_items_popup .close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+.prohibited_items_popup .top {
+  text-align: center;
+  padding: 50px 70px 30px;
+}
+.prohibited_items_popup .top .img-item {
+  width: 100%;
+}
+.prohibited_items_popup .top .additional-information {
+  text-align: center;
+  display: block;
+}
+.prohibited_items_popup .bottom {
+  padding: 20px;
+}
+.prohibited_items_popup .bottom .par-content-check-info {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.please_be_advised {
+  width: 55%;
+  margin: 0 auto;
+  position: relative;
+}
+.please_be_advised .close {
+  position: absolute;
+  top: 0;
+  right: -30px;
+}
+.please_be_advised .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 55px 124px 35px;
+}
+.please_be_advised .top p {
+  text-align: center;
+}
+.please_be_advised .bottom {
+  padding: 20px 20px 30px;
+}
+.please_be_advised .bottom .par-content-check-info {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+.modile-delivery-price .accordion .text.active {
+  display: block;
 }

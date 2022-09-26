@@ -37,6 +37,29 @@ $(function() {
 
 
 
+   $('.but-change-password').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    modal: true
+  });
+  $(document).on('click', '.popup-promocode.close', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+
+
+$('.but_new_parcel').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    modal: true
+  });
+  $(document).on('click', '.popup-promocode.close', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+});
+
+
+
 $(function() {
     $.validator.addMethod("emailRegex", function(value, element) {
         return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/i.test(value);
@@ -110,7 +133,67 @@ $(function() {
     });
 });
 
-   
+ 
+
+$(".change-password-popup").validate({
+    rules: {
+        "email": {
+            required: true,
+            emailRegex: true,
+        },
+    },
+    messages: {
+        "email": {
+            required: "You must enter a email name",
+            emailRegex: "Login format not valid"
+        },
+    },
+});
+
+
+
+$(".prohibited_items_popup").validate({
+    rules: {
+        "obligatory_checkbox": {
+            required: true,
+        },
+    },
+    messages: {
+        "obligatory_checkbox": {
+            required: "Required field",
+        },
+    },
+});
+
+
+
+
+ $(".promo-code").validate({
+    rules: {
+        "promocode": {
+            required: true,
+        },
+    },
+    messages: {
+        "promocode": {
+            required: "Required field",
+        },
+    },
+});
+
+
+ $(".amount-form").validate({
+    rules: {
+        "amount_sent": {
+            required: true,
+        },
+    },
+    messages: {
+        "amount_sent": {
+            required: "Required field",
+        },
+    },
+});
 
 
 
@@ -554,6 +637,14 @@ function draw(event) {
   ctx.stroke();
 };
 })
+
+$('.link-menu a').click(function(){
+  $(this).toggleClass('active')
+})
+
+$('.modile-delivery-price .accordion-title').click(function(){
+  $(this).next('.modile-delivery-price .accordion .text').toggleClass('active')
+});
 
 
 

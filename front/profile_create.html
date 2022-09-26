@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Profile</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/intlTelInput.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -26,7 +28,7 @@
 
 						    <li class="link-menu">
 
-							    <a href="profile-orderHistory.html">
+							    <a href="profile-orderHistory.html" class="">
 
 							    	<svg class="icon-menu" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -44,7 +46,7 @@
 
 						    <li class="link-menu">
 
-							    <a href="new-parcel.html">
+							    <a href="#prohibited_items_popup" class="but_new_parcel">
 
 							    	<svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -64,7 +66,7 @@
 
 						    <li class="link-menu">
 
-							    <a href="">
+							    <a href="money-transfer.html">
 
 							    	<svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -82,7 +84,7 @@
 
 						    <li class="link-menu">
 
-							    <a href="profile-user.html">
+							    <a href="profile_create.html">
 
 							    	<svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -113,6 +115,54 @@
 			</div>
 
 		</header>
+
+	
+
+		<div class="prohibited_items_popup form mfp-hide white-popup-block" id="prohibited_items_popup">
+
+			<div class="top bb">
+
+				<h2 class="heading mb">PROHIBITED ITEMS IN INTERNATIONAL PACKAGES</h2>
+
+				<a href="" class="close"><img src="img/close.svg" alt=""></a>
+
+				<div class="mb">
+
+					<img class="img-item" src="img/proh-img.png" alt="">
+
+					<img class="img-item" src="img/proh-img2.png" alt="">
+
+				</div>
+
+				<div class="additional-information d-flex">					
+
+					The complete list of restricted items ca be foud o our  <a href="" class="underline c-blue">website</a> 
+
+				</div>
+
+			</div>
+
+			<div class="bottom d-flex ai jc">
+
+				<label for="checkbox2" class="par-content-check-info" name="">
+
+					<input type="checkbox" id="checkbox2" name="obligatory_checkbox">
+
+					<span class="false_checkbox"></span>
+
+					I have read the list of prohibited items
+
+				</label>
+
+				<div class="end">
+
+					<button class="main-button">CONTINUE</button>
+
+				</div>
+
+			</div>
+
+		</div>
 
 	
 
@@ -154,8 +204,8 @@
 							<span class="h3">English</span>
 						</div>
 					</div>
-					<a href="" class="profile-button bb"><p class="h3">EDIT PROFILE</p></a> <br>
-					<a href="" class="profile-button"><p class="h3">CHANGE PASSWORD</p></a>
+					<a href="profile-user.html" class="profile-button but-edut-profile bb"><p class="h3">EDIT PROFILE</p></a> <br>
+					<a href="#change-password-popup" class="profile-button but-change-password"><p class="h3">CHANGE PASSWORD</p></a>
 				</div>
 				<div class="w33 send-form">
 					<div class="send-form-add-adress form  mb-10">
@@ -163,7 +213,7 @@
 							<div class="avtar-bcg"><img src="img/geo.svg" alt=""></div>
 							<h3 class="fs18">SEND FORM</h3>
 						</div>
-						<a href="" class="profile-button"><p class="h3">ADD ADDRESS</p></a>
+						<a href="profile-sendform.html" class="profile-button but-send-form"><p class="h3">ADD ADDRESS</p></a>
 					</div>
 					<div class="profile-edit-card form mb-10">
 						<div class="row d-flex jc ai">
@@ -216,7 +266,7 @@
 							<div class="avtar-bcg"><img src="img/geo.svg" alt=""></div>
 							<h3 class="fs18">DELIVER TO</h3>
 						</div>
-						<a href="" class="profile-button"><p class="h3">ADD ADDRESS</p></a>
+						<a href="profile-deliver.html" class="profile-button but-deliver-to"><p class="h3">ADD ADDRESS</p></a>
 					</div>
 					<div class="profile-edit-card form">
 						<div class="row d-flex jc ai">
@@ -245,40 +295,35 @@
 		</div>
 	</section>
 
-	
-
-	
-
-	
-
-		<footer class="bcg-white bt">
-
-			<div class="container">
-
-				<div class="footer d-flex jc">
-
-					<a href="" class="logo"><img src="img/logo.svg" alt="logo-meest"></a>
-
-					<div class="right d-flex">
-
-						<a href="" class="skype"><img src="img/skype.svg" alt=""></a>
-
-						<p>Please be advised all Online Money Transfer <br>are a subject a 24-hour <a href="">Verification Hold!</a></p>
-
-					</div>
-
-				</div>
-
-				
-
+	<div class="promo-code-popup change-password-popup d-flex mfp-hide white-popup-block" id="change-password-popup">
+		<form action="" class="promo-code">
+			<h2 class="heading">CHANGE PASSWORD</h2>
+			<p>Please be advised all Online Money Transfer are a subject a 24-hour Verification Hold!</p>
+			<div class="form-row">
+				<label for="" class="label">Email</label>
+				<input type="" class="input" name="email" placeholder="">
 			</div>
-
-		</footer>
-
-		
-
+			<button class="main-button">SEND</button>
+		</form>
+		<a href="" class="popup-promocode close"><img src="img/close.svg" alt=""></a>
+	</div>
 	
-
+	
+	
+		<footer class="bcg-white bt">
+			<div class="container">
+				<div class="footer d-flex jc">
+					<a href="" class="logo"><img src="img/logo.svg" alt="logo-meest"></a>
+					<div class="right d-flex">
+						<a href="" class="skype"><img src="img/skype.svg" alt=""></a>
+						<p>Please be advised all Online Money Transfer <br>are a subject a 24-hour <a href="">Verification Hold!</a></p>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		
+	
 	<script src="js/jq/jq.js"></script>
 	<script src="js/tel-input/intlTelInput-jquery.min.js"></script>
 	<script src="js/popup/jquery.magnific-popup.min.js"></script>
