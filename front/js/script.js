@@ -151,7 +151,6 @@ $(".change_password_valid").validate({
 });
 
 
-
 $(".prohibited_items_valid").validate({
     rules: {
         "obligatory_check": {
@@ -165,15 +164,16 @@ $(".prohibited_items_valid").validate({
     },
 });
 
-$(".btn_prohibited_items").click(function(e){
-  e.preventDefault();
- let prohibited_submit = $(".prohibited_items_valid").submit();
-  if (prohibited_submit==true) {
-    window.open('new-parcel.html');
-  } else {
-    
-  }
-});
+
+
+
+
+  $(".prohibited_items_valid").submit(function() { 
+    let th = $(this); 
+    if (th.valid()) { 
+        location.href = 'new-parcel.html';
+     }
+  });
 
 
 
