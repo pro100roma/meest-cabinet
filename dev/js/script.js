@@ -172,6 +172,7 @@ $(".prohibited_items_valid").validate({
     let th = $(this); 
     if (th.valid()) { 
         location.href = 'new-parcel.html';
+        return false;
      }
   });
 
@@ -659,6 +660,25 @@ $('.link-menu a').click(function(){
 $('.modile-delivery-price .accordion-title').click(function(){
   $(this).next('.modile-delivery-price .accordion .text').toggleClass('active')
 });
+
+
+$('.minus').click( function () {
+  let total = $(this).next();
+  let amount = $(this).parent().find('input').attr('data-price')
+  if (total.val() > 1) {
+      total.val(+total.val() - 1);
+      total.trigger('change')
+  }
+});
+
+    // Увеличиваем на 1
+$('.plus').click(function () {
+  let total = $(this).prev();
+  let amount = $(this).parent().find('input').attr('data-price')
+  total.val(+total.val() + 1);
+  total.trigger('change')
+});
+
 
 
 

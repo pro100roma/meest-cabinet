@@ -434,7 +434,7 @@ body {
 
 .end {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .end .main-button {
   margin-right: 0;
@@ -735,6 +735,7 @@ tr:nth-child(even) {
   background: rgba(35, 97, 169, 0.4);
   backdrop-filter: blur(10px);
   opacity: 0.8;
+  -webkit-filter: blur(10px);
 }
 
 .top-calculator {
@@ -1251,12 +1252,12 @@ tr:nth-child(even) {
 .prohibited_items_popup {
   width: 40%;
   margin: 0 auto;
-  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .prohibited_items_popup .close {
-  position: absolute;
-  right: -30px;
-  top: 0;
+  margin-right: -25px;
+  display: block;
 }
 .prohibited_items_popup .top {
   text-align: center;
@@ -1270,7 +1271,7 @@ tr:nth-child(even) {
   display: block;
 }
 .prohibited_items_popup .bottom {
-  padding: 20px 20px 30px;
+  padding: 20px 20px 35px;
 }
 .prohibited_items_popup .bottom .par-content-check-info {
   margin-bottom: 0;
@@ -1278,7 +1279,7 @@ tr:nth-child(even) {
 }
 .prohibited_items_popup .bottom .par-content-check-info #obligatory_check-error {
   position: absolute;
-  bottom: -15px;
+  bottom: -20px;
   left: 0;
 }
 
@@ -1316,4 +1317,8 @@ tr:nth-child(even) {
 
 .modile-delivery-price .accordion .text.active {
   display: block;
+}
+
+.plus, .minus {
+  cursor: pointer;
 }

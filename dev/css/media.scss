@@ -540,6 +540,13 @@ header{
   display: none;
 }
 
+.prohibited_items_popup .bottom {
+  display: block;
+}
+
+.prohibited_items_popup .bottom .par-content-check-info {
+  margin-bottom: 15px;
+}
 
 }
 
@@ -601,13 +608,14 @@ header{
 } 
 
 .prohibited_items_popup {
-  width: 60%;
+  width: 100%;
+  display: block;
 }
 
 .prohibited_items_popup .close {
   position: absolute;
-  right: 0;
-  top: -30px;
+  top: 10px;
+  right: 35px;
 }
 
 .pay-method-wrap {

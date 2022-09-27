@@ -447,7 +447,7 @@ body{
 
 .end{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   .main-button{
     margin-right: 0;
   }
@@ -763,6 +763,7 @@ tr:nth-child(even) {
   background: rgba(35, 97, 169, 0.4);
   backdrop-filter: blur(10px);
   opacity: 0.8;
+  -webkit-filter: blur(10px);
 }
 
 .top-calculator{
@@ -1290,11 +1291,11 @@ tr:nth-child(even) {
 .prohibited_items_popup{
   width: 40%;
   margin: 0 auto;
-  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
   .close{
-    position: absolute;
-    right: -30px;
-    top: 0;
+    margin-right: -25px;
+    display: block;
   }
   .top{
     text-align: center;
@@ -1308,13 +1309,13 @@ tr:nth-child(even) {
     }
   }
   .bottom{
-    padding: 20px 20px 30px;
+    padding: 20px 20px 35px;
     .par-content-check-info{
       margin-bottom: 0;
       margin-right: 5px;
       #obligatory_check-error{
         position: absolute;
-        bottom: -15px;
+        bottom: -20px;
         left: 0;
       }
     }
@@ -1356,6 +1357,10 @@ tr:nth-child(even) {
 
 .modile-delivery-price .accordion .text.active {
   display: block;
+}
+
+.plus, .minus{
+  cursor: pointer;
 }
 
 
