@@ -536,6 +536,10 @@ header{
   display: block;
 }
 
+.nav-menu .link-menu a::after {
+  display: none;
+}
+
 
 }
 

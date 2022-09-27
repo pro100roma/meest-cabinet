@@ -1270,11 +1270,16 @@ tr:nth-child(even) {
   display: block;
 }
 .prohibited_items_popup .bottom {
-  padding: 20px;
+  padding: 20px 20px 30px;
 }
 .prohibited_items_popup .bottom .par-content-check-info {
   margin-bottom: 0;
   margin-right: 5px;
+}
+.prohibited_items_popup .bottom .par-content-check-info #obligatory_check-error {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
 }
 
 .underline {

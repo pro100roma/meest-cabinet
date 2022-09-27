@@ -1308,10 +1308,15 @@ tr:nth-child(even) {
     }
   }
   .bottom{
-    padding: 20px;
+    padding: 20px 20px 30px;
     .par-content-check-info{
       margin-bottom: 0;
       margin-right: 5px;
+      #obligatory_check-error{
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+      }
     }
   }
 }

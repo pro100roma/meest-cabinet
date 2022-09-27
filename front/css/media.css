@@ -450,6 +450,9 @@
     width: 100%;
     display: block;
   }
+  .nav-menu .link-menu a::after {
+    display: none;
+  }
 }
 @media screen and (max-width: 900px) {
   .divide::after {

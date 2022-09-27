@@ -135,7 +135,7 @@ $(function() {
 
  
 
-$(".change-password-popup").validate({
+$(".change_password_valid").validate({
     rules: {
         "email": {
             required: true,
@@ -151,24 +151,41 @@ $(".change-password-popup").validate({
 });
 
 
-
-$(".prohibited_items_popup").validate({
+$(".prohibited_items_valid").validate({
     rules: {
-        "obligatory_checkbox": {
+        "obligatory_check": {
             required: true,
         },
     },
     messages: {
-        "obligatory_checkbox": {
+        "obligatory_check": {
             required: "Required field",
         },
     },
 });
 
+/*$(".btn_prohibited_items").click(function(e){
+  e.preventDefault();
+ let prohibited_submit = $(".prohibited_items_valid").submit();
+  if (prohibited_submit==true) {
+    window.open('new-parcel.html');
+  } else {
+    
+  }
+});*/
 
 
 
- $(".promo-code").validate({
+  $(".prohibited_items_valid").submit(function() { 
+    let th = $(this); 
+    if (th.valid()) { 
+        location.href = 'new-parcel.html';
+     }
+  }
+
+
+
+ $(".promocode_valid").validate({
     rules: {
         "promocode": {
             required: true,
@@ -194,6 +211,11 @@ $(".prohibited_items_popup").validate({
         },
     },
 });
+
+
+
+
+
 
 
 
