@@ -1322,3 +1322,7 @@ tr:nth-child(even) {
 .plus, .minus {
   cursor: pointer;
 }
+
+.payment_method-navigation {
+  display: block;
+}
