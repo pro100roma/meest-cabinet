@@ -679,36 +679,14 @@ $('.plus').click(function () {
   total.trigger('change')
 });
 
-/*function myFunction() {
-  // Get the checkbox
-  var checkBox = document.getElementById("checkbox28");
-  // Get the output text
-  var payMenu = document.getElementsByClassName("payment_method-navigation");
 
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    payMenu.style.display = "none";
-  } else {
-    payMenu.style.display = "block";
-  }
-}  
-  */
+$("#checkbox28").click(function(){
+  $('.payment_method-navigation').hide()
+});  
 
-
-const cash = document.getElementById('checkbox28');
-
-const payMenu = document.getElementById('payment_method-navigation');
-
-cash.addEventListener('click', function handleClick() {
-  if (cash.checked) {
-    payMenu.style.display = 'none';
-  } else {
-    payMenu.style.display = 'block';
-  }
-  return false;
-});
-
-
+$(".pay_card").click(function(){
+  $('.payment_method-navigation').show()
+});  
 
 
 
